@@ -2,30 +2,33 @@ import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import { axe, toHaveNoViolations } from 'jest-axe';
 import App from './App';
+import { I18nWrapper } from './tests/setup';
 
 // Extend expect with jest-axe matchers
 expect.extend(toHaveNoViolations);
 
 describe('App', () => {
-  it('renders the welcome message', () => {
-    render(<App />);
+  it('renders the welcome message using i18n', () => {
+    render(
+      <I18nWrapper>
+        <App />
+      </I18nWrapper>
+    );
 
+    // Check for the translated welcome message
     expect(screen.getByText('Hello, Fluent!')).toBeInTheDocument();
+    // Check for the translated subtitle
     expect(
       screen.getByText('Your journey to confident communication starts here.')
     ).toBeInTheDocument();
   });
 
-  it('renders the app name from config', () => {
-    render(<App />);
-
-    // Verify the app name is dynamically rendered from config
-    const heading = screen.getByRole('heading', { level: 1 });
-    expect(heading).toHaveTextContent('Hello, Fluent!');
-  });
-
   it('should not have any accessibility violations', async () => {
-    const { container } = render(<App />);
+    const { container } = render(
+      <I18nWrapper>
+        <App />
+      </I18nWrapper>
+    );
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });

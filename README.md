@@ -125,14 +125,14 @@ The application is configured for Firebase Hosting deployment with automated CI/
 
 ## 🚀 **Deploy to Production** (GitHub Actions)
 
-Once Firebase is configured, your app will automatically deploy on every push to the `master` branch:
+Once Firebase is configured, your app will automatically deploy on every push to the `main` branch:
 
 1. **Push your code:**
 
    ```bash
    git add .
    git commit -m "feat: your changes"
-   git push origin master
+   git push origin main
    ```
 
 2. **GitHub Actions will:**
@@ -215,7 +215,7 @@ src/
 
 The project includes a comprehensive GitHub Actions workflow that:
 
-- **Triggers** on pushes to `master` and pull requests
+- **Triggers** on pushes to `main` and pull requests
 - **Runs** linting, type checking, and tests on every change
 - **Generates** test coverage reports
 - **Builds** the production application
