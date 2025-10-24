@@ -1,6 +1,10 @@
 {
   "env": { "browser": true, "es2020": true },
-  "extends": ["eslint:recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -9,13 +13,14 @@
       "jsx": true
     }
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "react-refresh"],
   "rules": {
     "prefer-const": "error",
     "no-var": "error",
     "no-unused-vars": "off",
     "no-undef": "off",
     "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-    "@typescript-eslint/no-explicit-any": "warn"
+    "@typescript-eslint/no-explicit-any": "warn",
+    "react-refresh/only-export-components": ["warn", { "allowConstantExport": true }]
   }
 }
