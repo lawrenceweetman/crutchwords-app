@@ -198,8 +198,10 @@ When implementing new features from the Product Requirements Document:
 
 For ongoing maintenance and dependency updates:
 
+Prior to pushing any changes to Github, take the opportunity to check to see if any maintenance tasks can be carried out and do so.
+
 1. **Check for vulnerabilities:** `npm audit`
-2. **Update dependencies carefully:** Use `npm outdated` to see available updates
+2. **Update dependencies carefully:** Use `npm outdated` to see available updates: there should be low tolerance for deprecated and unsupported dependencies, and extremely low tolerance for vulnerabilities or dependencies with known issues such as memory leaks
 3. **Test thoroughly:** Full verification after any dependency changes
 4. **Update documentation:** Keep setup instructions current
 5. **Consider migration impact:** Major version updates may require code changes
