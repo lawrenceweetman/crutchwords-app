@@ -18,9 +18,16 @@ import { logger } from '@/utils/logger';
  * @returns Array of lexicon entries that match the specified language via BCP 47 tags
  */
 function getLexiconForLanguage(language: string): LexiconEntry[] {
-  return lexiconData.filter((entry: LexiconEntry) =>
-    entry.bcp47Tags.some((tag: string) => tag === language || tag.startsWith(language + '-'))
-  );
+  return lexiconData.filter((entry: unknown) => {
+    const lexiconEntry = entry as Partial<LexiconEntry>;
+    return (
+      lexiconEntry.term && // Ensure term exists
+      lexiconEntry.bcp47Tags &&
+      lexiconEntry.bcp47Tags.some(
+        (tag: string) => tag === language || tag.startsWith(language + '-')
+      )
+    );
+  }) as LexiconEntry[];
 }
 
 /**

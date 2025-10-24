@@ -45,6 +45,7 @@ describe('useAppStore', () => {
         highlightFillers: true,
         showCategories: true,
         goalFillersPerMinute: 3,
+        showOnboarding: true,
       });
     });
 
@@ -240,6 +241,7 @@ describe('useAppStore', () => {
         highlightFillers: true,
         showCategories: true,
         goalFillersPerMinute: 3,
+        showOnboarding: true,
       });
     });
   });

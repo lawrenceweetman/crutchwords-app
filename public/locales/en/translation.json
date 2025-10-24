@@ -57,9 +57,11 @@
   },
   "onboarding": {
     "welcome": "Welcome to Fluent!",
-    "subtitle": "Your journey to confident communication starts here.",
+    "title": "Welcome to Fluent!",
+    "subtitle": "Ever wonder why we say \"um\" or \"like\"?\nIt's not a \"flaw.\" It's your brain working! Fillers are a natural response to \"cognitive load\"—that moment your brain is busy planning its next thought.\n\nThis app isn't a critic; it's a coach. It helps you build awareness. By seeing your fillers in real-time, you can start to practice replacing them with a powerful, confident tool: the silent pause.\n\nReady to start practicing?",
     "getStarted": "Let's Go",
-    "skip": "Skip for now"
+    "skip": "Skip for now",
+    "dontShowAgain": "Don't show this again"
   },
   "tips": {
     "pause": "Feeling the urge to say 'um'? Try this: just pause. A moment of silence gives your brain time to catch up and makes you sound more confident.",

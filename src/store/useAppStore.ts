@@ -52,6 +52,7 @@ interface AppState {
     highlightFillers: boolean;
     showCategories: boolean;
     goalFillersPerMinute: number;
+    showOnboarding: boolean;
   };
 }
 
@@ -94,6 +95,7 @@ const initialState: AppState = {
     highlightFillers: true,
     showCategories: true,
     goalFillersPerMinute: 3,
+    showOnboarding: true,
   },
 };
 
