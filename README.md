@@ -148,6 +148,16 @@ src/
 - `npm test` - Run test suite
 - `npm run test:coverage` - Run tests with coverage report
 
+### **🤖 AI Agent Scripts** (Non-blocking, efficient workflows)
+
+- `npm run test:quick` - Run tests once (non-blocking)
+- `npm run test:ci` - Run tests with coverage for CI
+- `npm run verify` - Run full verification (type-check + lint + tests)
+- `npm run check` - Quick quality check (type-check + lint)
+- `npm run build:verify` - Verify and build in one command
+
+**Note:** See [instructions-for-AI-agents.md](./development-docs/instructions-for-AI-agents.md) for detailed AI development guidance.
+
 ## 🔧 Technology Stack
 
 - **Frontend**: React 18 with TypeScript

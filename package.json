@@ -15,7 +15,12 @@
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",
     "type-check": "tsc --noEmit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test:quick": "vitest --run",
+    "test:ci": "vitest --run --coverage",
+    "verify": "npm run type-check && npm run lint && npm run test:quick",
+    "check": "npm run type-check && npm run lint",
+    "build:verify": "npm run verify && npm run build"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -2,6 +2,8 @@
 
 This document outlines the core principles and standards for developing the "Fluent" application. Adhering to these guidelines from day one will ensure a high-quality, maintainable, and scalable codebase.
 
+**⚠️ AI AGENTS:** See [instructions-for-AI-agents.md](./instructions-for-AI-agents.md) for specific guidance on non-blocking command execution and efficient development workflows.
+
 ## **1\. Core Principles**
 
 ### **1.1. Test-Driven Development (TDD)**
@@ -175,12 +177,24 @@ src/
 - Git should be set up as soon as possible, including with actions to deploy to firebase, etc.
 - We will commit to Git frequently. Before doing so, ensure you run at least lint and unit tests locally. These failing in the Github action is unacceptable, but I won't always explicitly ask you to do this testing when I ask you to commit and push!
 
-### **3.2 Documentation updates:**
+### **3.2 Terminal Command Best Practices:**
+
+When running terminal commands as an AI assistant, always use **non-blocking execution**:
+
+- **Testing:** Use `npm test --run` instead of `npm test` to avoid watch mode
+- **Development server:** Use `npm run dev` only when explicitly needed for testing, and run it in background if necessary
+- **Linting/Formatting:** Use `npm run lint`, `npm run format` for one-time execution
+- **Build commands:** Use `npm run build` for production builds, not development mode
+- **CI/CD verification:** Run commands individually and sequentially, not in watch mode or parallel when verification is needed
+
+This ensures commands complete quickly and don't block subsequent operations or create hanging processes.
+
+### **3.3 Documentation updates:**
 
 - Update documentation (including this development documentation) as we go.
 - Ensure documentation always reflects the decisions we've made and the reality we've deliberately created.
 
-### **3.3 The app name:**
+### **3.4 The app name:**
 
 - The app name is currently `Fluent App`
 - We should make it **very easy** to change the app name. As per the Github URL, for now I'm calling it `crutchwords-app` in technical places like firebase and the parent directory of this project. Externalise uses of the app name so it can effectively be chanfged in config!
