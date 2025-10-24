@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "An application to help users identify and reduce filler words in speech",
   "type": "module",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
