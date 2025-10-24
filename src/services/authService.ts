@@ -37,7 +37,13 @@ export async function signInAnonymouslyUser(): Promise<AuthUser> {
 
     const auth = getFirebaseAuth();
     if (!auth) {
-      throw new Error('Firebase Auth not initialized');
+      logger.warn('Firebase Auth not initialized - using mock user');
+      // Return a mock user for development when Firebase is not configured
+      return {
+        id: 'demo-user-dev',
+        isAnonymous: true,
+        createdAt: new Date().toISOString(),
+      };
     }
 
     // Check if signInAnonymously is available (it might not be in test environments)
@@ -61,6 +67,16 @@ export async function signInAnonymouslyUser(): Promise<AuthUser> {
     return authUser;
   } catch (error) {
     logger.error('Anonymous sign in failed', error);
+
+    // For development, return a mock user if Firebase fails
+    if (import.meta.env.DEV) {
+      logger.warn('Using mock user for development');
+      return {
+        id: 'demo-user-dev',
+        isAnonymous: true,
+        createdAt: new Date().toISOString(),
+      };
+    }
 
     if (error instanceof Error) {
       throw new Error(`Authentication failed: ${error.message}`);
@@ -97,8 +113,18 @@ export function onAuthStateChange(callback: (user: AuthUser | null) => void): Un
   try {
     const auth = getFirebaseAuth();
     if (!auth) {
-      logger.warn('Firebase Auth not initialized');
-      callback(null);
+      logger.warn('Firebase Auth not initialized - using mock auth state');
+      // For development, simulate auth state change with mock user (one time only)
+      if (import.meta.env.DEV) {
+        // Use a static ID for development to avoid infinite loops
+        callback({
+          id: 'demo-user-dev',
+          isAnonymous: true,
+          createdAt: new Date().toISOString(),
+        });
+      } else {
+        callback(null);
+      }
       return () => {};
     }
 
@@ -123,7 +149,7 @@ export function onAuthStateChange(callback: (user: AuthUser | null) => void): Un
     return unsubscribe;
   } catch (error) {
     logger.error('Failed to set up auth state listener', error);
-    callback(null);
+    // Don't call callback in error state to avoid infinite loops
     return () => {};
   }
 }

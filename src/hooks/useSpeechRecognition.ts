@@ -147,20 +147,25 @@ export function useSpeechRecognition(
         switch (event.error) {
           case 'not-allowed':
             setError(
-              'Microphone access denied. Please allow microphone permissions and try again.'
+              'Microphone access denied. Please allow microphone permissions in your browser settings and refresh the page.'
             );
             break;
           case 'no-speech':
             setError('No speech detected. Please speak clearly and try again.');
             break;
           case 'audio-capture':
-            setError('No microphone found. Please check your audio setup.');
+            setError('No microphone found. Please check your audio setup and try again.');
             break;
           case 'network':
             setError('Network error occurred. Please check your connection and try again.');
             break;
+          case 'permission-denied':
+            setError(
+              'Microphone permission was denied. Please allow microphone access in your browser settings.'
+            );
+            break;
           default:
-            setError(errorMessage);
+            setError(`Speech recognition failed: ${event.error}. Please try refreshing the page.`);
         }
       };
 
@@ -186,25 +191,14 @@ export function useSpeechRecognition(
     try {
       setError(null);
 
-      // Request microphone permission if needed
-      if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-        try {
-          await navigator.mediaDevices.getUserMedia({ audio: true });
-        } catch (err) {
-          logger.error('Microphone permission denied', err);
-          setError(
-            'Microphone access is required for speech recognition. Please allow microphone permissions.'
-          );
-          return;
-        }
-      }
-
       // Initialize recognition if not already done
       if (!recognitionRef.current) {
         recognitionRef.current = initializeRecognition();
       }
 
       if (recognitionRef.current && !isListening) {
+        // The Web Speech API will automatically request microphone permissions
+        // when recognition.start() is called
         recognitionRef.current.start();
       }
     } catch (err) {

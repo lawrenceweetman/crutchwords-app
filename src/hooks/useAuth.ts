@@ -41,6 +41,10 @@ export function useAuth() {
       const authUser = await signInAnonymouslyUser();
       setUser(authUser);
       setAuthenticated(true);
+      logger.info('Authentication initialized successfully', {
+        userId: authUser.id,
+        isAnonymous: authUser.isAnonymous,
+      });
     } catch (error) {
       logger.error('Authentication initialization failed', error);
       setUser(null);
@@ -77,14 +81,18 @@ export function useAuth() {
       if (authUser) {
         setUser(authUser);
         setAuthenticated(true);
+        logger.info('Auth state updated', {
+          userId: authUser.id,
+          isAnonymous: authUser.isAnonymous,
+        });
       } else {
         setUser(null);
         setAuthenticated(false);
       }
     });
 
-    // Initialize auth if not already done
-    if (!storeAuthState || !user) {
+    // Initialize auth if not already done (only once)
+    if (!storeAuthState && !user) {
       initializeAuth();
     }
 
@@ -93,7 +101,7 @@ export function useAuth() {
       logger.info('Cleaning up auth state listener');
       unsubscribe();
     };
-  }, [storeAuthState, user, setUser, setAuthenticated, initializeAuth]);
+  }, [setUser, setAuthenticated, initializeAuth]); // Removed storeAuthState and user from dependencies to prevent infinite loops
 
   return {
     user,

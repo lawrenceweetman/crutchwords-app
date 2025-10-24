@@ -137,7 +137,7 @@ function App(): JSX.Element {
 
           {/* Tips Section */}
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-blue-900 mb-4">💡 Quick Tip</h3>
+            <h2 className="text-lg font-semibold text-blue-900 mb-4">💡 Quick Tip</h2>
             <p className="text-blue-800 leading-relaxed">{t('tips.awareness')}</p>
           </div>
         </main>

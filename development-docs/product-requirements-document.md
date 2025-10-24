@@ -57,6 +57,19 @@ The roadmap is prioritized to tackle the most architecturally complex "retrofit 
   - As a User, I can "discard" this session.
   - **\[NEW\]** As a User, the app uses the "Onboarding Copy" (from the Onboarding_And_Coaching_Copy.md file) for any first-time-use modals or tooltips.
 
+### **PRD Addendum: P1.5 - Practice Topic Generator**
+
+This feature is pulled forward from the original P5.5 ("Prompt Library") as it is a core component of the initial user experience, reducing friction and making the app immediately useful.
+
+- **Research Basis:** Practicing transitions and structuring thoughts on demand is a key remediation technique. Providing a topic removes the cognitive load of "what to talk about."
+- **Technical Foundation:** This feature introduces a new JSON data file, `src/utils/practice_topics.json`, and requires the `analysisService` or a new `topicService` to be language-aware.
+- **User Stories:**
+  - As a User, on the main practice screen (P1), I can see a "Get Topic" button.
+  - As a User, when I click the "Get Topic" button, the app will display a random topic from the practice_topics.json file.
+  - As a User (Developer), the app will filter the topics based on my currently selected language (from the i18n context).
+  - As a User, I can click the button again to "shuffle" and get a new topic.
+  - As a User, I can start my practice session, and the app will record and analyze my speech based on this topic.
+
 ### **P2: Session Saving & History**
 
 - **Goal:** Allow users to persist their results and track progress.
@@ -87,3 +100,42 @@ The roadmap is prioritized to tackle the most architecturally complex "retrofit 
   - As a User, I can sign in with a Google account.
   - As a User, my anonymous session history is seamlessly merged with my new "full" account.
   - As a User, I can log out.
+
+## **P5.1: The "Pacing" Trainer (Slowing Down)**
+
+- **Research Basis:** The technique of "slowing down" to allow cognitive load to catch up with speech.
+- **User Stories:**
+  - As a User, I can start a "Pacing Practice" mode.
+  - As a User, in this mode, I can see a simple visual metronome on the screen (e.g., a pulsating circle).
+  - As a User, I can set the desired pace (e.g., "Slow," "Medium," "Fast") to practice speaking more deliberately.
+  - As a User, the app will provide a simple score at the end on how well I matched the target pace.
+
+## **P5.2: The "Pause" Trainer (The Silent Pause)**
+
+- **Research Basis:** The core technique of replacing a filled pause ("um") with a silent pause.
+- **User Stories:**
+  - As a User, I can start a "Pause Practice" mode.
+  - As a User, the app will present me with a series of short prompts or questions (e.g., "What did you do this weekend?").
+  - As a User, I must practice pausing for 1-2 seconds (a "confident pause") before I begin speaking.
+  - As a User, the app will give me feedback on whether I started speaking immediately (a "rush") or successfully used the silent pause.
+
+## **P5.3: The "Awareness" Trainer (Live Feedback)**
+
+- **Research Basis:** Building visceral, real-time awareness of the habit as it occurs.
+- **User Stories:**
+  - As a User, I can enable an "Awareness" mode during any practice session.
+  - As a User, in this mode, the app will provide an immediate, non-intrusive feedback signal the instant it detects a filler word.
+  - As a User, I can choose my feedback signal (e.g., a subtle audio "click," a gentle haptic buzz on mobile, or a brief red flash on the screen).
+
+## **P5.4: The "Warm-Up" Library (Anxiety Reduction)**
+
+- **Research Basis:** Reducing the cognitive load and anxiety that causes fillers before speaking.
+- **User Stories:**
+  - As a User, I can access a "Warm-Up Library" before starting a session.
+  - As a User, I can select a 1- or 2-minute guided exercise.
+  - As a User, I can be guided through a simple "Belly Breathing" exercise to reduce nerves.
+  - As a User, I can be guided through a "Vocal Warm-Up" (e.g., lip trills, sirens) to prepare my voice.
+
+## **P5.5: The "Prompt" Library (Transition Practice) - MOVED**
+
+- **Note:** This feature has been pulled forward into the core MVP as P1.5: Practice Topic Generator. It is no longer part of the P5 roadmap, as it is now a foundational feature.
