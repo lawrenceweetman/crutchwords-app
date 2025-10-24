@@ -11,12 +11,14 @@ function App(): JSX.Element {
   const { t } = useTranslation();
 
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <header className="text-center">
-        <h1 className="text-4xl font-bold text-text-primary mb-4">
+    <div className="flex items-center justify-center min-h-screen p-4 xs:p-6">
+      <header className="text-center max-w-2xl w-full">
+        <h1 className="text-2xl xs:text-3xl md:text-4xl font-bold text-text-primary mb-4 xs:mb-6">
           {t('app.welcome', { appName: APP_CONFIG.name })}
         </h1>
-        <p className="text-lg text-text-secondary">{t('onboarding.subtitle')}</p>
+        <p className="text-base xs:text-lg text-text-secondary mb-6 xs:mb-8">
+          {t('onboarding.subtitle')}
+        </p>
       </header>
     </div>
   );

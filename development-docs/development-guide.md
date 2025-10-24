@@ -118,16 +118,28 @@ src/
   - logger.debug() will be used for state changes or data dumps.
   - This allows us to strip debug and info logs from production builds while keeping error logs.
 
-### **2.8. Accessibility (a11y) First**
+### **2.8. Responsive Design & Mobile-First**
+
+- **Problem:** Modern users expect apps to work seamlessly across all devices, but responsive design is complex to retrofit.
+- **Solution:** We will implement mobile-first responsive design from the start.
+  - **Mobile-First CSS:** All components will be built mobile-first using Tailwind's responsive breakpoints (xs: 375px, sm: 640px, md: 768px, lg: 1024px, xl: 1280px).
+  - **Touch-Friendly UI:** All interactive elements will meet minimum 44px touch target guidelines.
+  - **Progressive Web App (PWA):** The app will include PWA capabilities for native-like mobile experience.
+  - **Responsive Typography:** Text will scale appropriately across all screen sizes.
+  - **Testing:** All components will be tested across different screen sizes and orientations.
+
+### **2.9. Accessibility (a11y) First**
 
 - **Problem:** Accessibility is a nightmare to retrofit and is often forgotten.
 - **Solution:** We will build with a11y in mind from the start.
   - **Semantic HTML:** Use \<button\>, \<main\>, \<label\> correctly. Avoid divs with onClick handlers.
   - **Keyboard Navigation:** Ensure the entire app is usable with only the keyboard (tab order, focus states).
   - **ARIA Roles:** Add aria-labels to all icon-only buttons.
+  - **Screen Reader Support:** All content will be accessible to screen readers.
+  - **Color Contrast:** Ensure WCAG AA color contrast ratios are maintained.
   - **Testing:** We will add jest-axe to our TDD workflow (see 1.1) to automatically catch accessibility violations in our tests.
 
-### **2.9. Internationalization (i18n) Stubbing**
+### **2.10. Internationalization (i18n) Stubbing**
 
 - **Problem:** Adding other languages later requires manually finding and replacing every single text string in the app.
 - **Solution:** We will use a lightweight i18n library (like i18next) from the start, even if we only support English.
@@ -135,7 +147,7 @@ src/
   - Text in components will be rendered using a hook: const { t } \= useTranslation(); ... \<button\>{t('recorder.start')}\</button\>.
   - This makes adding a es/translation.json file (and thus, Spanish) a simple translation task, not a massive refactoring project.
 
-### **2.10. Global State Management**
+### **2.11. Global State Management**
 
 - **Problem:** Relying only on useState and useContext leads to prop-drilling and complex state-sharing as the app grows (e.g., to share user settings, or session history).
 - **Solution:** We will use **Zustand** for global state from day one.
@@ -143,7 +155,7 @@ src/
   - This will hold global state like isAuthenticated, userSettings, etc.
   - It's minimal, hook-based, and avoids the need for wrapping the app in \<Provider\> components, making it very low-cost to implement.
 
-### **2.11. API Service Layer**
+### **2.12. API Service Layer**
 
 - **Problem:** Components making direct calls to Firebase (e.g., getDoc, setDoc) are hard to test and tightly couple the UI to the database implementation.
 - **Solution:** We will create an abstraction layer in src/services/.
@@ -151,7 +163,7 @@ src/
   - Components will call _these_ service functions, not Firestore directly.
   - This makes components cleaner and allows us to easily mock the service layer in our TDD workflow.
 
-### **2.12. Theming & Design Tokens**
+### **2.13. Theming & Design Tokens**
 
 - **Problem:** Hardcoding design values (e.g., bg-blue-500, text-sm) leads to an inconsistent UI and is a find-and-replace nightmare during a redesign.
 - **Solution:** We will formally define our design system in tailwind.config.js.
@@ -161,7 +173,7 @@ src/
   - **Spacing:** spacing: { 'sidebar': '20rem' }
   - Components will use these tokens (bg-primary, font-sans) instead of magic numbers.
 
-### **2.13. Secure Content Rendering**
+### **2.14. Secure Content Rendering**
 
 - **Problem:** The tech spec mentions dangerouslySetInnerHTML to render highlighted transcripts. This is a massive XSS (Cross-Site Scripting) security risk.
 - **Solution:** We will **forbid** the use of dangerouslySetInnerHTML.

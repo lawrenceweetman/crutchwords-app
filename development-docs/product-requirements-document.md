@@ -17,6 +17,7 @@ Public speaking and effective communication are critical skills, but many people
 - **Coach, Not Critic:** Based on research, we understand fillers are a _natural part of cognition_, not a "flaw." The app's voice must be supportive and encouraging, focused on awareness and replacement (with pauses), not "elimination."
 - **Actionable Feedback:** Don't just report—provide clear, real-time feedback the user can act on.
 - **Low Friction:** The tool should be instantly usable. Open the app and start talking.
+- **Mobile-First Design:** The app will be designed to work seamlessly on mobile devices, tablets, and desktop, with touch-friendly interfaces and responsive layouts.
 
 ## **4\. Feature Roadmap (AI-Native Order)**
 

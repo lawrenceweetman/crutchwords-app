@@ -4,13 +4,14 @@ This document outlines the high-level technical stack and data flow for the "Flu
 
 ## **1\. Core Technology Stack**
 
-- **Frontend:** React (Vite)
+- **Frontend:** React (Vite) with mobile-first responsive design
 - **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **Speech Recognition:** Browser-native **Web Speech API** (SpeechRecognition).
+- **Styling:** Tailwind CSS with custom responsive breakpoints
+- **Speech Recognition:** Browser-native **Web Speech API** (SpeechRecognition) with mobile optimization
 - **Database:** **Firestore** (for user session history).
 - **Authentication:** **Firebase Authentication** (starting with anonymous auth, then upgrading to Google).
 - **Deployment:** **Firebase Hosting** with GitHub Actions for CI/CD.
+- **Mobile Experience:** Progressive Web App (PWA) capabilities for native-like mobile experience
 
 ## **2\. Core Data Flow (Real-Time Analysis \- P1)**
 

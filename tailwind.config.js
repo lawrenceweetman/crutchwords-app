@@ -2,6 +2,15 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    screens: {
+      // Mobile-first responsive breakpoints
+      xs: '375px', // Small phones
+      sm: '640px', // Standard phones
+      md: '768px', // Tablets
+      lg: '1024px', // Small laptops
+      xl: '1280px', // Desktops
+      '2xl': '1536px', // Large screens
+    },
     extend: {
       colors: {
         primary: '#3B82F6',
@@ -31,6 +40,12 @@ export default {
       spacing: {
         sidebar: '20rem',
         header: '4rem',
+        // Touch-friendly sizing for mobile
+        'touch-target': '44px', // Minimum 44px for touch targets
+        'touch-padding': '12px', // Extra padding for mobile interactions
+      },
+      minHeight: {
+        'touch-target': '44px', // Minimum height for touch targets
       },
       animation: {
         'pulse-subtle': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',

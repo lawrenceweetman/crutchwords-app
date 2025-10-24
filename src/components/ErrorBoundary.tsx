@@ -75,9 +75,9 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
 
       // Default fallback UI
       return (
-        <div className="min-h-screen flex items-center justify-center bg-background p-4">
-          <div className="max-w-md w-full bg-background-secondary rounded-lg shadow-lg p-8">
-            <div className="flex items-center justify-center w-12 h-12 mx-auto bg-danger bg-opacity-20 rounded-full mb-4">
+        <div className="min-h-screen flex items-center justify-center bg-background p-4 xs:p-6">
+          <div className="max-w-md w-full bg-background-secondary rounded-lg shadow-lg p-6 xs:p-8">
+            <div className="flex items-center justify-center w-12 h-12 mx-auto bg-danger bg-opacity-20 rounded-full mb-4 xs:mb-6">
               <svg
                 className="w-6 h-6 text-danger"
                 fill="none"
@@ -115,17 +115,17 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
               </details>
             )}
 
-            <div className="flex gap-3">
+            <div className="flex gap-3 xs:gap-4">
               <button
                 onClick={this.handleReset}
-                className="flex-1 px-4 py-2 bg-background-tertiary text-text-primary rounded hover:bg-opacity-80 transition-colors"
+                className="flex-1 px-4 py-3 xs:px-6 xs:py-3 min-h-touch-target bg-background-tertiary text-text-primary rounded-lg hover:bg-opacity-80 transition-colors text-sm xs:text-base font-medium"
                 type="button"
               >
                 Try Again
               </button>
               <button
                 onClick={() => window.location.reload()}
-                className="flex-1 px-4 py-2 bg-primary text-white rounded hover:bg-primary-dark transition-colors"
+                className="flex-1 px-4 py-3 xs:px-6 xs:py-3 min-h-touch-target bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors text-sm xs:text-base font-medium"
                 type="button"
               >
                 Refresh Page
