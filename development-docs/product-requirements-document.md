@@ -139,3 +139,24 @@ This feature is pulled forward from the original P5.5 ("Prompt Library") as it i
 ## **P5.5: The "Prompt" Library (Transition Practice) - MOVED**
 
 - **Note:** This feature has been pulled forward into the core MVP as P1.5: Practice Topic Generator. It is no longer part of the P5 roadmap, as it is now a foundational feature.
+
+## **P6: "Just a Minute" Gamified Challenge**
+
+- **Research Basis:** Advanced fluency gamification modeled on the "Just a Minute" radio show format. This mode combines hesitation avoidance (P1-P5) with lexical diversity (repetition avoidance).
+- **Technical Foundation:** This feature directly leverages the real-time engine (P1), the live feedback "buzzer" (P5.3), and the "Practice Topic Generator" (P1.5). It introduces a "repetition detection" algorithm.
+- **User Stories:**
+  - As a User, I can start a "Just a Minute" challenge.
+  - As a User, I will be given a random topic from the "Practice Topic Generator" (P1.5) and must speak for 60 seconds.
+  - As a User (Developer), the app will use a "stop word list" (common words like 'the', 'a', 'is') for each language to detect only the repetition of significant words.
+  - **P6.1: "Game Mode" (Instant Challenge)**
+    - As a User, when I select "Game Mode," the timer will start.
+    - As a User, the app will immediately "buzz" (using P5.3's feedback) and stop the timer if I use a filler word OR repeat a significant word.
+    - As a User, my score (time achieved) will be saved to a "Just a Minute" leaderboard.
+  - **P6.2: "Stats Mode" (Practice & Analysis)**
+    - As a User, when I select "Stats Mode," the app will let me speak for the full 60 seconds.
+    - As a User, the app will log every hesitation and repetition but will not stop the timer.
+    - As a User, at the end of the 60 seconds, I will get a detailed report card showing:
+      - Total hesitations (by category).
+        -Total repetitions (with a list of the repeated words).
+      - A "Fluency Streak" score.
+    - As a User, this score will be saved to my main "P4 Dashboard" to track my long-term challenge performance.

@@ -1,0 +1,422 @@
+[
+  {
+    "topicId": "t-001",
+    "bcp47": "en-US",
+    "category": "Personal",
+    "topic": "What is your favorite season and why?"
+  },
+  {
+    "topicId": "t-002",
+    "bcp47": "en-US",
+    "category": "Opinion",
+    "topic": "What is your opinion on remote work versus working in an office?"
+  },
+  {
+    "topicId": "t-003",
+    "bcp47": "en-US",
+    "category": "Creative",
+    "topic": "Describe your ideal vacation."
+  },
+  {
+    "topicId": "t-004",
+    "bcp47": "en-GB",
+    "category": "Personal",
+    "topic": "Describe your favourite meal you've had recently."
+  },
+  {
+    "topicId": "t-005",
+    "bcp47": "en-GB",
+    "category": "Opinion",
+    "topic": "What do you think is the most important quality in a friend?"
+  },
+  {
+    "topicId": "t-006",
+    "bcp47": "en-GB",
+    "category": "Creative",
+    "topic": "Talk about a film you've seen recently and what you thought of it."
+  },
+  {
+    "topicId": "t-007",
+    "bcp47": "en-US",
+    "category": "Personal",
+    "topic": "What is a hobby you have, or one you would like to try?"
+  },
+  {
+    "topicId": "t-008",
+    "bcp47": "es-ES",
+    "category": "Personal",
+    "topic": "¿Cuál es tu comida favorita y por qué?"
+  },
+  {
+    "topicId": "t-009",
+    "bcp47": "es-ES",
+    "category": "Opinion",
+    "topic": "¿Prefieres la ciudad o el campo? Da tus razones."
+  },
+  {
+    "topicId": "t-010",
+    "bcp47": "fr-FR",
+    "category": "Personal",
+    "topic": "Parlez-moi d'un livre ou d'un film que vous avez aimé."
+  },
+  {
+    "topicId": "t-011",
+    "bcp47": "en-US",
+    "category": "Personal",
+    "topic": "Talk about a place you have visited that made a strong impression on you."
+  },
+  {
+    "topicId": "t-012",
+    "bcp47": "en-US",
+    "category": "Opinion",
+    "topic": "Do you think social media has a positive or negative impact on society?"
+  },
+  {
+    "topicId": "t-013",
+    "bcp47": "en-US",
+    "category": "Creative",
+    "topic": "If you could have any superpower, what would it be and why?"
+  },
+  {
+    "topicId": "t-014",
+    "bcp47": "en-GB",
+    "category": "Personal",
+    "topic": "What was your favourite subject in school and why?"
+  },
+  {
+    "topicId": "t-015",
+    "bcp47": "en-GB",
+    "category": "Opinion",
+    "topic": "Should public transport be free for everyone? Discuss the pros and cons."
+  },
+  {
+    "topicId": "t-016",
+    "bcp47": "en-GB",
+    "category": "Creative",
+    "topic": "If you could invent something new, what would it be?"
+  },
+  {
+    "topicId": "t-017",
+    "bcp47": "en-US",
+    "category": "Personal",
+    "topic": "What is a skill you are proud of?"
+  },
+  {
+    "topicId": "t-018",
+    "bcp47": "en-US",
+    "category": "Opinion",
+    "topic": "What is the most important invention of the last 100 years?"
+  },
+  {
+    "topicId": "t-019",
+    "bcp47": "en-US",
+    "category": "Creative",
+    "topic": "Describe a normal day in your life, but make it sound like an epic adventure."
+  },
+  {
+    "topicId": "t-020",
+    "bcp47": "en-GB",
+    "category": "Personal",
+    "topic": "Who is a person you admire, and what qualities do you admire about them?"
+  },
+  {
+    "topicId": "t-021",
+    "bcp47": "es-ES",
+    "category": "Personal",
+    "topic": "Describe tus últimas vacaciones. ¿A dónde fuiste?"
+  },
+  {
+    "topicId": "t-022",
+    "bcp47": "es-ES",
+    "category": "Creative",
+    "topic": "Si pudieras cenar con cualquier persona, viva o muerta, ¿quién sería?"
+  },
+  {
+    "topicId": "t-023",
+    "bcp47": "fr-FR",
+    "category": "Opinion",
+    "topic": "Pensez-vous qu'il est important d'apprendre d'autres langues ? Pourquoi ?"
+  },
+  {
+    "topicId": "t-024",
+    "bcp47": "fr-FR",
+    "category": "Creative",
+    "topic": "Quel est le travail de vos rêves ? Décrivez une journée typique."
+  },
+  {
+    "topicId": "t-025",
+    "bcp47": "en-US",
+    "category": "Personal",
+    "topic": "What's your favorite way to spend a weekend?"
+  },
+  {
+    "topicId": "t-026",
+    "bcp47": "en-US",
+    "category": "Opinion",
+    "topic": "Are self-driving cars a good idea?"
+  },
+  {
+    "topicId": "t-027",
+    "bcp47": "en-US",
+    "category": "Creative",
+    "topic": "If you could live in any period of history, when would it be?"
+  },
+  {
+    "topicId": "t-028",
+    "bcp47": "en-GB",
+    "category": "Personal",
+    "topic": "Talk about a book that had a significant impact on you."
+  },
+  {
+    "topicId": "t-029",
+    "bcp47": "en-GB",
+    "category": "Opinion",
+    "topic": "Is it better to live in a big city or a small town?"
+  },
+  {
+    "topicId": "t-030",
+    "bcp47": "en-GB",
+    "category": "Creative",
+    "topic": "Describe your perfect day from start to finish."
+  },
+  {
+    "topicId": "t-031",
+    "bcp47": "en-US",
+    "category": "Personal",
+    "topic": "What's the best piece of advice you've ever received?"
+  },
+  {
+    "topicId": "t-032",
+    "bcp47": "en-US",
+    "category": "Opinion",
+    "topic": "Should all students be required to learn coding in school?"
+  },
+  {
+    "topicId": "t-033",
+    "bcp47": "en-US",
+    "category": "Creative",
+    "topic": "You've been given $1 million, but you must give it all away. How do you distribute it?"
+  },
+  {
+    "topicId": "t-034",
+    "bcp47": "en-GB",
+    "category": "Personal",
+    "topic": "What's your favourite way to relax after a long day?"
+  },
+  {
+    "topicId": "t-035",
+    "bcp47": "en-GB",
+    "category": "Opinion",
+    "topic": "Are zoos ethical? Discuss your viewpoint."
+  },
+  {
+    "topicId": "t-036",
+    "bcp47": "en-GB",
+    "category": "Creative",
+    "topic": "Invent a new holiday and explain its traditions."
+  },
+  {
+    "topicId": "t-037",
+    "bcp47": "en-US",
+    "category": "Personal",
+    "topic": "Talk about a time you faced a significant challenge and how you overcame it."
+  },
+  {
+    "topicId": "t-038",
+    "bcp47": "en-US",
+    "category": "Opinion",
+    "topic": "Is space exploration a worthwhile investment?"
+  },
+  {
+    "topicId": "t-039",
+    "bcp47": "en-US",
+    "category": "Creative",
+    "topic": "What would you do if you were president/prime minister for a day?"
+  },
+  {
+    "topicId": "t-040",
+    "bcp47": "en-GB",
+    "category": "Personal",
+    "topic": "What does 'success' mean to you?"
+  },
+  {
+    "topicId": "t-041",
+    "bcp47": "es-ES",
+    "category": "Opinion",
+    "topic": "¿Crees que la tecnología nos hace más o menos conectados?"
+  },
+  {
+    "topicId": "t-042",
+    "bcp47": "es-ES",
+    "category": "Creative",
+    "topic": "Describe la casa de tus sueños."
+  },
+  {
+    "topicId": "t-043",
+    "bcp47": "es-ES",
+    "category": "Personal",
+    "topic": "Habla de una película que te hizo llorar o reír mucho."
+  },
+  {
+    "topicId": "t-044",
+    "bcp47": "fr-FR",
+    "category": "Personal",
+    "topic": "Quel est votre passe-temps favori et pourquoi l'aimez-vous ?"
+  },
+  {
+    "topicId": "t-045",
+    "bcp47": "fr-FR",
+    "category": "Opinion",
+    "topic": "La mode est-elle importante pour vous ?"
+  },
+  {
+    "topicId": "t-046",
+    "bcp47": "fr-FR",
+    "category": "Creative",
+    "topic": "Si vous pouviez voyager dans le temps, où iriez-vous ?"
+  },
+  {
+    "topicId": "t-047",
+    "bcp47": "en-US",
+    "category": "Personal",
+    "topic": "What's the best gift you've ever given or received?"
+  },
+  {
+    "topicId": "t-048",
+    "bcp47": "en-US",
+    "category": "Opinion",
+    "topic": "Should the voting age be lowered to 16?"
+  },
+  {
+    "topicId": "t-049",
+    "bcp47": "en-US",
+    "category": "Creative",
+    "topic": "Design a new app. What problem does it solve?"
+  },
+  {
+    "topicId": "t-050",
+    "bcp47": "en-GB",
+    "category": "Personal",
+    "topic": "Describe a typical Sunday for you."
+  },
+  {
+    "topicId": "t-051",
+    "bcp47": "en-GB",
+    "category": "Opinion",
+    "topic": "What is the best way to learn a new skill?"
+  },
+  {
+    "topicId": "t-052",
+    "bcp47": "en-GB",
+    "category": "Creative",
+    "topic": "If you could talk to animals, what would you ask them?"
+  },
+  {
+    "topicId": "t-053",
+    "bcp47": "en-US",
+    "category": "Personal",
+    "topic": "What is a major goal you are working towards right now?"
+  },
+  {
+    "topicId": "t-054",
+    "bcp47": "en-US",
+    "category": "Opinion",
+    "topic": "Is it more important to be liked or to be respected?"
+  },
+  {
+    "topicId": "t-055",
+    "bcp47": "en-US",
+    "category": "Creative",
+    "topic": "You are stranded on a desert island. What three items do you wish you had?"
+  },
+  {
+    "topicId": "t-056",
+    "bcp47": "en-GB",
+    "category": "Personal",
+    "topic": "How has your hometown changed since you were a child?"
+  },
+  {
+    "topicId": "t-057",
+    "bcp47": "en-GB",
+    "category": "Opinion",
+    "topic": "Should schools get rid of traditional summer holidays?"
+  },
+  {
+    "topicId": "t-058",
+    "bcp47": "en-GB",
+    "category": "Professional",
+    "topic": "Describe your ideal work environment."
+  },
+  {
+    "topicId": "t-059",
+    "bcp47": "en-US",
+    "category": "Personal",
+    "topic": "What is your earliest memory?"
+  },
+  {
+    "topicId": "t-060",
+    "bcp47": "en-US",
+    "category": "Opinion",
+    "topic": "What is one thing you would change about the education system?"
+  },
+  {
+    "topicId": "t-061",
+    "bcp47": "es-ES",
+    "category": "Personal",
+    "topic": "¿Qué es lo que más te gusta de tu trabajo o estudios?"
+  },
+  {
+    "topicId": "t-062",
+    "bcp47": "es-ES",
+    "category": "Opinion",
+    "topic": "¿Es más importante el dinero o la felicidad?"
+  },
+  {
+    "topicId": "t-063",
+    "bcp47": "es-ES",
+    "category": "Creative",
+    "topic": "Si fueras un animal, ¿cuál serías y por qué?"
+  },
+  {
+    "topicId": "t-064",
+    "bcp47": "es-ES",
+    "category": "Personal",
+    "topic": "Describe a una persona que admiras mucho."
+  },
+  {
+    "topicId": "t-065",
+    "bcp47": "fr-FR",
+    "category": "Personal",
+    "topic": "Quelle est votre saison préférée et pourquoi ?"
+  },
+  {
+    "topicId": "t-066",
+    "bcp47": "fr-FR",
+    "category": "Opinion",
+    "topic": "Les réseaux sociaux sont-ils plus bénéfiques ou néfastes ?"
+  },
+  {
+    "topicId": "t-067",
+    "bcp47": "fr-FR",
+    "category": "Creative",
+    "topic": "Imaginez que vous gagnez à la loterie. Que feriez-vous ?"
+  },
+  {
+    "topicId": "t-068",
+    "bcp47": "fr-FR",
+    "category": "Personal",
+    "topic": "Parlez d'une tradition de votre famille."
+  },
+  {
+    "topicId": "t-069",
+    "bcp47": "fr-FR",
+    "category": "Opinion",
+    "topic": "Devrait-on interdire les voitures en centre-ville ?"
+  },
+  {
+    "topicId": "t-070",
+    "bcp47": "fr-FR",
+    "category": "Creative",
+    "topic": "Si vous aviez un super-pouvoir, lequel choisiriez-vous ?"
+  }
+]
