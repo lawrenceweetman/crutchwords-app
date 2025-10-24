@@ -104,7 +104,7 @@ describe('useAppStore', () => {
         totalFillerCount: 5,
         fillerDensityPercent: 5.0,
         fillersPerMinute: 3.0,
-        categoryCounts: { PAUSE: 3, MARKER: 2, PLACATING: 0 },
+        categoryCounts: { FILLED_PAUSE: 3, DISCOURSE_MARKER: 2, PLACATING_TAG: 0 },
       };
 
       useAppStore.getState().setAnalysis(analysis);
@@ -135,7 +135,7 @@ describe('useAppStore', () => {
         totalFillerCount: 3,
         fillerDensityPercent: 6.0,
         fillersPerMinute: 2.0,
-        categoryCounts: { PAUSE: 2, MARKER: 1, PLACATING: 0 },
+        categoryCounts: { FILLED_PAUSE: 2, DISCOURSE_MARKER: 1, PLACATING_TAG: 0 },
       },
       createdAt: '2025-10-24T12:00:00Z',
       duration: 90,

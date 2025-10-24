@@ -1,0 +1,86 @@
+[
+  {
+    "category": "FILLED_PAUSE",
+    "term": "um",
+    "language": "en",
+    "region": "Global",
+    "notes": "Classic cognitive hesitation marker."
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "uh",
+    "language": "en",
+    "region": "Global",
+    "notes": "Classic cognitive hesitation marker."
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "ah",
+    "language": "en",
+    "region": "Global",
+    "notes": "Classic cognitive hesitation marker."
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "er",
+    "language": "en",
+    "region": "Global",
+    "notes": "Classic cognitive hesitation marker."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "like",
+    "language": "en",
+    "region": "Global",
+    "notes": "Common discourse marker used in informal speech."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "so",
+    "language": "en",
+    "region": "Global",
+    "notes": "Discourse marker indicating continuation or conclusion."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "well",
+    "language": "en",
+    "region": "Global",
+    "notes": "Discourse marker indicating hesitation or topic shift."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "basically",
+    "language": "en",
+    "region": "Global",
+    "notes": "Discourse marker used to simplify or summarize."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "actually",
+    "language": "en",
+    "region": "Global",
+    "notes": "Discourse marker used for correction or emphasis."
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "you know",
+    "language": "en",
+    "region": "Global",
+    "notes": "Placating phrase seeking agreement or understanding."
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "right?",
+    "language": "en",
+    "region": "Global",
+    "notes": "Tag question seeking confirmation."
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "you see",
+    "language": "en",
+    "region": "Global",
+    "notes": "Placating phrase seeking understanding or agreement."
+  }
+]

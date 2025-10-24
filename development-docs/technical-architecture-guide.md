@@ -28,35 +28,58 @@ This is the most critical architectural component.
 5. **Re-render:** The main component (SpeechRecorder.tsx) re-renders, displaying the new transcript.
 6. **Real-time Analysis:**
    - A useEffect hook (or a memoized function) is triggered by the transcript change.
-   - It passes the interimTranscript to a utility function: analysisService.getHighlightedTranscript(transcript).
+   - It passes the interimTranscript and language code to: analysisService.getHighlightedTranscript(transcript, language).
    - **\[NEW\]** This analysisService **must not** use dangerouslySetInnerHTML. It must return a _data structure_ as defined in the Dev Guide (Section 2.13).
    - The React component maps over this data structure to render the highlighted spans _safely_.
+   - The service filters the internationalized lexicon by language before processing.
 
 ## **3\. Analysis Engine (src/services/analysisService.ts)**
 
-This service is responsible for all text processing.
+This service is responsible for all text processing and supports internationalization.
 
-- **\[NEW\]** **Filler Categorization:**
-  - A config file (e.g., src/utils/analysis.config.ts) will define the filler words in categories.
-  - export const FILLER_CATEGORIES: Record\<string, string\[\]\> \= { 'PAUSE': \['um', 'uh', 'ah', 'er'\], 'MARKER': \['like', 'so', 'well', 'basically', 'actually'\], 'PLACATING': \['you know', 'right?', 'you see'\] }
-- **getHighlightedTranscript(text: string):**
-  - Takes raw text.
+- **Internationalized Lexicon (src/utils/lexicon.json):**
+  - The app's single source of truth for filler words is now a JSON file containing an array of LexiconEntry objects.
+  - Each entry has: category ('FILLED_PAUSE' | 'DISCOURSE_MARKER' | 'PLACATING_TAG'), term, language, region, and notes.
+  - The analysisService filters this master lexicon by language code before processing.
+  - Example structure:
+    ```json
+    [
+      {
+        "category": "FILLED_PAUSE",
+        "term": "um",
+        "language": "en",
+        "region": "Global",
+        "notes": "Classic cognitive hesitation marker."
+      },
+      {
+        "category": "DISCOURSE_MARKER",
+        "term": "like",
+        "language": "en",
+        "region": "Global",
+        "notes": "Common discourse marker used in informal speech."
+      }
+    ]
+    ```
+- **getHighlightedTranscript(text: string, language?: string):**
+  - Takes raw text and optional language code (defaults to 'en').
+  - Filters the lexicon by the provided language.
   - Returns an array: Array\<{ text: string, isFiller: boolean, category: string | null }\>
-  - Example output: \[{ text: "Hello ", isFiller: false, category: null }, { text: "like", isFiller: true, category: 'MARKER' }, ...\]
-- **getSessionAnalysis(text: string):**
-  - Takes the _final_ transcript.
+  - Example output: \[{ text: "Hello ", isFiller: false, category: null }, { text: "like", isFiller: true, category: 'DISCOURSE_MARKER' }, ...\]
+- **getSessionAnalysis(text: string, duration: number, language?: string):**
+  - Takes the _final_ transcript, speech duration in minutes, and optional language code (defaults to 'en').
+  - Filters the lexicon by the provided language before analysis.
   - Returns a structured analysis object:
-  - Example output:  
-    {  
-     "totalWordCount": 150,  
-     "totalFillerCount": 7,  
-     "fillerDensityPercent": 4.6, // (7 / 150\) \* 100  
-     "fillersPerMinute": 5.0, // (Assuming a 1.4 min speech)  
-     "categoryCounts": {  
-     "PAUSE": 3,  
-     "MARKER": 4,  
-     "PLACATING": 0  
-     }  
+  - Example output:
+    {
+    "totalWordCount": 150,
+    "totalFillerCount": 7,
+    "fillerDensityPercent": 4.6, // (7 / 150) \* 100
+    "fillersPerMinute": 5.0, // (Assuming a 1.4 min speech)
+    "categoryCounts": {
+    "FILLED_PAUSE": 3,
+    "DISCOURSE_MARKER": 4,
+    "PLACATING_TAG": 0
+    }
     }
 
 ## **4\. Data Persistence (Firestore \- P2)**
@@ -73,10 +96,10 @@ This service is responsible for all text processing.
    "totalFillerCount": 7,  
    "fillerDensityPercent": 4.6,  
    "fillersPerMinute": 5.0,  
-   "categoryCounts": {  
-   "PAUSE": 3,  
-   "MARKER": 4,  
-   "PLACATING": 0  
-   }  
+   "categoryCounts": {
+  "FILLED_PAUSE": 3,
+  "DISCOURSE_MARKER": 4,
+  "PLACATING_TAG": 0
+  }  
    }  
   }
