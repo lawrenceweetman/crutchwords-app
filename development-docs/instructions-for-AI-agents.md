@@ -1,5 +1,38 @@
 # **AI Agent Development Instructions**
 
+This document provides comprehensive guidance for AI assistants working on the **Fluent** application - a React-based tool to help users identify and reduce filler words in speech.
+
+## **📚 Project Context & Documentation**
+
+**Your Mission:** Build a world where everyone can communicate their ideas with clarity and confidence through an accessible, private, and effective speech coaching application.
+
+**Your Core Documents (6 pillars of truth):**
+
+1. **product-requirements-document.md (The "WHAT"):** Your **Goal**. Defines _what_ features to build and in _what priority order_ (P0, P1, P2, etc.).
+
+2. **technical-architecture-guide.md (The "BLUEPRINT"):** Your **Stack**. Defines the technologies (React, Firebase, Web Speech API) and the core _data flow_ and _database schema_.
+
+3. **development-guide.md (The "RULES"):** Your **Process**. Defines the _quality standards_ you must adhere to for all code: TDD, Clean Code, folder structure, logging, i18n stubbing, absolute imports, etc.
+
+4. **instructions-for-AI-agents.md (The "HOW"):** This document - defines **efficient AI development workflows**. Follow these guidelines for non-blocking terminal commands, proper testing procedures, and optimal development practices.
+
+5. **onboarding-and-coaching-copy.md (The "VOICE"):** Your **Content**. You must use the exact text from this file for all user-facing UI (onboarding, tips, and analysis explanations).
+
+6. **comprehensive-research.md:** The **background** on verbal disfluencies, compiled by Google Gemini deep research. Use this to stress test against academic literature.
+
+**⚠️ CRITICAL:** You must follow these documents precisely. They are your complete source of truth.
+
+## **🎯 Development Philosophy**
+
+- **Quality First:** Test-Driven Development (TDD), Clean Code principles, and comprehensive testing
+- **Deploy Early, Deploy Often:** Get features working and deployed quickly, then iterate
+- **Privacy by Design:** Audio processing happens in-browser, minimal data collection
+- **Accessibility First:** Semantic HTML, keyboard navigation, screen reader support
+- **User-Centered:** Coach, not critic - supportive and encouraging tone throughout
+- **Research-Backed:** All features based on cognitive psychology and linguistics research
+
+---
+
 This document provides specific guidance for AI assistants working on the Fluent application. Follow these instructions to ensure efficient, non-blocking development workflows.
 
 ## **🚫 Non-Blocking Command Execution**
