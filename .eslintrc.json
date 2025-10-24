@@ -1,0 +1,22 @@
+{
+  "env": { "browser": true, "es2020": true },
+  "extends": ["eslint:recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "jsx": true,
+    "jsxPragma": "React"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "prefer-const": "error",
+    "no-var": "error",
+    "no-unused-vars": "off",
+    "no-undef": "off",
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
+  }
+}

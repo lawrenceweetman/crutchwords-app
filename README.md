@@ -9,6 +9,7 @@ Fluent is an application designed to help users identify and reduce their use of
 This repository contains the complete project documentation and requirements. The actual application development is just beginning.
 
 **Current Phase: P0 - The Walking Skeleton**
+
 - ✅ Project documentation committed
 - 🔄 Setting up development environment (React, TypeScript, Vite)
 - 📝 Next: Implement core application shell
@@ -34,23 +35,27 @@ The project is built on a comprehensive set of requirements and guidelines:
 ### Development Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/lawrenceweetman/crutchwords-app.git
    cd crutchwords-app
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Set up environment variables**
+
    ```bash
    cp .env.example .env.local
    # Add your Firebase configuration
    ```
 
 4. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -118,4 +123,4 @@ For questions about the project requirements or development approach, refer to t
 
 ---
 
-*"Fillers are not a flaw. They're your brain working! This app helps you build awareness and replace them with confident, powerful pauses."*
+_"Fillers are not a flaw. They're your brain working! This app helps you build awareness and replace them with confident, powerful pauses."_

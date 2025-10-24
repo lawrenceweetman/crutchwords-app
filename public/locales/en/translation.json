@@ -1,0 +1,70 @@
+{
+  "app": {
+    "name": "Fluent",
+    "description": "Speak with Confidence"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Try Again",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close"
+  },
+  "recorder": {
+    "start": "Start Recording",
+    "stop": "Stop Recording",
+    "pause": "Pause",
+    "resume": "Resume",
+    "microphonePermission": "Please allow microphone access to start recording",
+    "recording": "Recording...",
+    "processing": "Processing...",
+    "ready": "Ready to record"
+  },
+  "analysis": {
+    "title": "Analysis",
+    "fillerWords": "Filler Words",
+    "totalWords": "Total Words",
+    "fillerDensity": "Filler Density",
+    "perMinute": "per minute",
+    "per100Words": "per 100 words",
+    "categories": {
+      "filledPauses": "Filled Pauses",
+      "discourseMarkers": "Discourse Markers",
+      "placatingTags": "Placating Tags"
+    }
+  },
+  "history": {
+    "title": "Session History",
+    "noSessions": "No sessions yet",
+    "sessionsCount": "{{count}} sessions",
+    "sessionDate": "Session from {{date}}",
+    "viewDetails": "View Details",
+    "deleteSession": "Delete Session"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome to Fluent!",
+    "totalTime": "Total Practice Time",
+    "averageFillers": "Average Fillers",
+    "improvement": "Improvement Trend",
+    "goals": "Goals",
+    "setGoal": "Set a Goal",
+    "currentGoal": "Current Goal: {{goal}}"
+  },
+  "onboarding": {
+    "welcome": "Welcome to Fluent!",
+    "subtitle": "Your journey to confident communication starts here",
+    "getStarted": "Let's Go",
+    "skip": "Skip for now"
+  },
+  "tips": {
+    "pause": "Feeling the urge to say 'um'? Try this: just pause. A moment of silence gives your brain time to catch up and makes you sound more confident.",
+    "pacing": "Fillers often happen when your mouth outpaces your mind. Try slowing down just a little. It gives you more time to think and your audience more time to listen.",
+    "awareness": "The first step to breaking a habit is noticing it. This app helps you build that awareness. Don't judge the fillers—just notice them!",
+    "anxiety": "Feeling nervous? Nerves are a top cause of fillers. Before you start, take one deep 'belly breath.' It's a simple way to calm your system.",
+    "transitions": "We often use 'so...' or 'um...' between big ideas. Try planning your transitions, even a simple 'Let's move on to...' can make a huge difference."
+  }
+}
