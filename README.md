@@ -16,7 +16,10 @@ This repository contains the complete project documentation and requirements. Th
 - ✅ GitHub Actions CI/CD pipeline configured
 - ✅ All quality assurance systems operational
 - ✅ Production build ready (194KB gzipped)
+- ✅ **Firebase deployment ready** (infrastructure complete)
 - 📝 **Next: P1 - Real-time speech analysis and user authentication**
+
+**🚀 Ready for Deployment:** Follow the [Firebase Setup Guide](#-firebase-setup) to see your app live at `https://your-project-id.web.app`!
 
 ## 📚 Documentation
 
@@ -120,6 +123,30 @@ The application is configured for Firebase Hosting deployment with automated CI/
    firebase deploy --only hosting
    ```
 
+## 🚀 **Deploy to Production** (GitHub Actions)
+
+Once Firebase is configured, your app will automatically deploy on every push to the `master` branch:
+
+1. **Push your code:**
+
+   ```bash
+   git add .
+   git commit -m "feat: your changes"
+   git push origin master
+   ```
+
+2. **GitHub Actions will:**
+   - Run linting, type checking, and tests
+   - Build the production app
+   - Deploy to Firebase Hosting automatically
+
+3. **Your live app will be available at:**
+   ```
+   https://your-project-id.web.app
+   ```
+
+**Current Status:** 🔄 Ready for Firebase setup (see instructions above)
+
 ## 🏗️ Project Structure
 
 The application follows a clean, modular architecture:
@@ -159,6 +186,10 @@ src/
 - `npm run build:verify` - Verify and build in one command
 
 **Note:** See [instructions-for-AI-agents.md](./development-docs/instructions-for-AI-agents.md) for detailed AI development guidance.
+
+## 🚀 Firebase Deployment
+
+**Ready to deploy?** Follow the [Firebase Setup Guide](#-firebase-setup) below to get your app live!
 
 ## 🔧 Technology Stack
 
