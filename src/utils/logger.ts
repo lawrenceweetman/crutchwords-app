@@ -11,13 +11,17 @@ interface LogEntry {
   level: LogLevel;
   message: string;
   timestamp: string;
-  data?: any;
+  data?: Record<string, unknown>;
 }
 
 class Logger {
   private isDevelopment = import.meta.env.DEV;
 
-  private formatMessage(level: LogLevel, message: string, data?: any): LogEntry {
+  private formatMessage(
+    level: LogLevel,
+    message: string,
+    data?: Record<string, unknown>
+  ): LogEntry {
     return {
       level,
       message,
@@ -26,7 +30,7 @@ class Logger {
     };
   }
 
-  private log(level: LogLevel, message: string, data?: any): void {
+  private log(level: LogLevel, message: string, data?: Record<string, unknown>): void {
     const entry = this.formatMessage(level, message, data);
 
     // Always log errors, regardless of environment
@@ -56,29 +60,29 @@ class Logger {
   /**
    * Log debug information (development only)
    */
-  debug(message: string, data?: any): void {
+  debug(message: string, data?: Record<string, unknown>): void {
     this.log('debug', message, data);
   }
 
   /**
    * Log general information
    */
-  info(message: string, data?: any): void {
+  info(message: string, data?: Record<string, unknown>): void {
     this.log('info', message, data);
   }
 
   /**
    * Log warnings
    */
-  warn(message: string, data?: any): void {
+  warn(message: string, data?: Record<string, unknown>): void {
     this.log('warn', message, data);
   }
 
   /**
    * Log errors (always logged, even in production)
    */
-  error(message: string, data?: any): void {
-    this.log('error', message, data);
+  error(message: string, data?: unknown): void {
+    this.log('error', message, data as Record<string, unknown>);
   }
 }
 
