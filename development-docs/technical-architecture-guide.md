@@ -31,16 +31,17 @@ This is the most critical architectural component.
    - It passes the interimTranscript and language code to: analysisService.getHighlightedTranscript(transcript, language).
    - **\[NEW\]** This analysisService **must not** use dangerouslySetInnerHTML. It must return a _data structure_ as defined in the Dev Guide (Section 2.13).
    - The React component maps over this data structure to render the highlighted spans _safely_.
-   - The service filters the internationalized lexicon by language before processing.
+   - The service filters the internationalized lexicon by language using BCP 47 tags before processing.
 
 ## **3\. Analysis Engine (src/services/analysisService.ts)**
 
 This service is responsible for all text processing and supports internationalization.
 
 - **Internationalized Lexicon (src/utils/lexicon.json):**
-  - The app's single source of truth for filler words is now a JSON file containing an array of LexiconEntry objects.
-  - Each entry has: category ('FILLED_PAUSE' | 'DISCOURSE_MARKER' | 'PLACATING_TAG'), term, language, region, and notes.
-  - The analysisService filters this master lexicon by language code before processing.
+  - The app's single source of truth for filler words is a JSON file containing an array of LexiconEntry objects.
+  - Each entry has: category ('FILLED_PAUSE' | 'DISCOURSE_MARKER' | 'PLACATING_TAG'), term, language, bcp47Tags, and notes.
+  - The bcp47Tags field contains an array of BCP 47 language tags that specify which languages and regions the term applies to (e.g., "en-US", "en-GB", "fr-FR").
+  - The analysisService filters this master lexicon by language code before processing, matching against any BCP 47 tag in the array.
   - Example structure:
     ```json
     [
@@ -48,26 +49,26 @@ This service is responsible for all text processing and supports internationaliz
         "category": "FILLED_PAUSE",
         "term": "um",
         "language": "en",
-        "region": "Global",
-        "notes": "Classic cognitive hesitation marker."
+        "bcp47Tags": ["en-US"],
+        "notes": "A common nasal-final filled pause in American English."
       },
       {
-        "category": "DISCOURSE_MARKER",
-        "term": "like",
+        "category": "FILLED_PAUSE",
+        "term": "er",
         "language": "en",
-        "region": "Global",
-        "notes": "Common discourse marker used in informal speech."
+        "bcp47Tags": ["en-GB", "en-AU", "en-NZ"],
+        "notes": "The primary non-nasal filled pause in British, Australian, and New Zealand English."
       }
     ]
     ```
 - **getHighlightedTranscript(text: string, language?: string):**
   - Takes raw text and optional language code (defaults to 'en').
-  - Filters the lexicon by the provided language.
+  - Filters the lexicon by the provided language, matching against BCP 47 tags.
   - Returns an array: Array\<{ text: string, isFiller: boolean, category: string | null }\>
   - Example output: \[{ text: "Hello ", isFiller: false, category: null }, { text: "like", isFiller: true, category: 'DISCOURSE_MARKER' }, ...\]
 - **getSessionAnalysis(text: string, duration: number, language?: string):**
   - Takes the _final_ transcript, speech duration in minutes, and optional language code (defaults to 'en').
-  - Filters the lexicon by the provided language before analysis.
+  - Filters the lexicon by the provided language before analysis, matching against BCP 47 tags.
   - Returns a structured analysis object:
   - Example output:
     {

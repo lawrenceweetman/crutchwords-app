@@ -13,12 +13,14 @@ import { logger } from '@/utils/logger';
  */
 
 /**
- * Filters the master lexicon by language code
- * @param language - Language code (e.g., 'en', 'es', 'fr')
- * @returns Array of lexicon entries for the specified language
+ * Filters the master lexicon by language code using BCP 47 tags
+ * @param language - Language code (e.g., 'en', 'en-US', 'fr')
+ * @returns Array of lexicon entries that match the specified language via BCP 47 tags
  */
 function getLexiconForLanguage(language: string): LexiconEntry[] {
-  return lexiconData.filter((entry: LexiconEntry) => entry.language === language);
+  return lexiconData.filter((entry: LexiconEntry) =>
+    entry.bcp47Tags.some((tag: string) => tag === language || tag.startsWith(language + '-'))
+  );
 }
 
 /**
@@ -26,7 +28,7 @@ function getLexiconForLanguage(language: string): LexiconEntry[] {
  * @param lexicon - Array of lexicon entries for a specific language
  * @returns RegExp object for matching filler words
  */
-function createRegexFromLexicon(lexicon: LexiconEntry[]): RegExp {
+function createRegexFromLexicon(lexicon: LexiconEntry[], language: string): RegExp {
   if (lexicon.length === 0) {
     logger.warn(`No lexicon entries found for language: ${language}`);
     return /(?!.*)/; // Match nothing
@@ -54,7 +56,7 @@ export function getHighlightedTranscript(
     }
 
     const lexicon = getLexiconForLanguage(language);
-    const regex = createRegexFromLexicon(lexicon);
+    const regex = createRegexFromLexicon(lexicon, language);
 
     const segments: TranscriptSegment[] = [];
     let lastIndex = 0;
@@ -144,16 +146,12 @@ export function getSessionAnalysis(
         totalFillerCount: 0,
         fillerDensityPercent: 0,
         fillersPerMinute: 0,
-        categoryCounts: {
-          FILLED_PAUSE: 0,
-          DISCOURSE_MARKER: 0,
-          PLACATING_TAG: 0,
-        },
+        categoryCounts: {},
       };
     }
 
     const lexicon = getLexiconForLanguage(language);
-    const regex = createRegexFromLexicon(lexicon);
+    const regex = createRegexFromLexicon(lexicon, language);
 
     // Count total words
     const words = text
@@ -173,18 +171,15 @@ export function getSessionAnalysis(
     const fillersPerMinute = duration > 0 ? totalFillerCount / duration : 0;
 
     // Count by category
-    const categoryCounts: CategoryCounts = {
-      FILLED_PAUSE: 0,
-      DISCOURSE_MARKER: 0,
-      PLACATING_TAG: 0,
-    };
+    const categoryCounts: CategoryCounts = {};
 
     if (matches) {
       matches.forEach((match) => {
         const matchedTerm = match.toLowerCase();
         const lexiconEntry = lexicon.find((entry) => entry.term.toLowerCase() === matchedTerm);
         if (lexiconEntry) {
-          categoryCounts[lexiconEntry.category]++;
+          const category = lexiconEntry.category as string;
+          categoryCounts[category] = (categoryCounts[category] || 0) + 1;
         }
       });
     }

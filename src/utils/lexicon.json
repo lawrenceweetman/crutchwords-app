@@ -1,86 +1,1060 @@
 [
   {
     "category": "FILLED_PAUSE",
-    "term": "um",
-    "language": "en",
-    "region": "Global",
-    "notes": "Classic cognitive hesitation marker."
-  },
-  {
-    "category": "FILLED_PAUSE",
     "term": "uh",
     "language": "en",
-    "region": "Global",
-    "notes": "Classic cognitive hesitation marker."
+    "bcp47Tags": ["en-US"],
+    "notes": "A primary non-lexical, non-nasal filled pause in American English, phonetically /ʌ/ or /ə/. Its production is often an unconscious byproduct of speech planning difficulties but is systematically interpreted by listeners as a cue to upcoming new or complex information.[3, 4] While functionally similar to 'um', some analyses suggest 'uh' signals a shorter, more minor delay or a struggle to find a specific word, whereas 'um' may indicate a deeper, more conceptual planning phase.[5]"
   },
   {
     "category": "FILLED_PAUSE",
-    "term": "ah",
+    "term": "uhh",
     "language": "en",
-    "region": "Global",
-    "notes": "Classic cognitive hesitation marker."
+    "bcp47Tags": ["en-US"],
+    "notes": "Spelling variant of 'uh'. Represents a lengthened 'uh' sound, often captured this way by transcription software. Functions identically as a filled pause for hesitation."
   },
   {
     "category": "FILLED_PAUSE",
-    "term": "er",
+    "term": "um",
     "language": "en",
-    "region": "Global",
-    "notes": "Classic cognitive hesitation marker."
+    "bcp47Tags": ["en-US"],
+    "notes": "A common nasal-final filled pause in American English, phonetically /ʌm/. Functionally similar to 'uh', it serves to fill silence during cognitive planning. However, it is often associated with longer or more significant delays, suggesting a deeper level of thought or difficulty in formulating the subsequent utterance.[5] Its use can be influenced by pragmatic constraints and communication strategies, serving not just as a sign of disfluency but also as a meaningful signal in discourse, for instance, to mitigate a face-threatening act or to subtly signal uncertainty.[6, 7] Research has also explored prosodic variations (rising, level, falling pitch) that can further modulate its pragmatic meaning.[8]"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "ummm",
+    "language": "en",
+    "bcp47Tags": ["en-US"],
+    "notes": "Spelling variant of 'um'. Represents a lengthened 'um' sound, often captured this way by transcription software. Functions identically as a filled pause for hesitation."
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "err",
+    "language": "en",
+    "bcp47Tags": ["en-GB", "en-AU", "en-NZ"],
+    "notes": "Spelling variant of 'er'. The primary non-nasal filled pause in British, Australian, and New Zealand English, phonetically /ɜː/. It is the functional equivalent of American English 'uh', used to signal hesitation, gain planning time, and maintain control of a conversational turn.[5, 9] Like other filled pauses, it is a key feature of spontaneous speech and its frequency can be influenced by factors such as cognitive load and the speaker's L2 proficiency.[1, 6]"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "errr",
+    "language": "en",
+    "bcp47Tags": ["en-GB", "en-AU", "en-NZ"],
+    "notes": "Spelling variant of 'er'. Represents a lengthened 'er' sound, often captured this way by transcription software. Functions identically as a filled pause for hesitation."
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "notes": "The primary nasal-final filled pause in British, Australian, and New Zealand English, phonetically /ɜːm/. It is the functional equivalent of American English 'um' and is typically used to signal a more considered or longer pause for thought compared to its non-nasal counterpart, 'er'.[5, 6] Its presence in discourse, while often perceived negatively in formal contexts, plays a crucial role in managing the temporal and cognitive demands of spontaneous speech production.[7, 10]"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "ermm",
+    "language": "en",
+    "bcp47Tags": ["en-GB", "en-AU", "en-NZ"],
+    "notes": "Spelling variant of 'erm'. Represents a lengthened 'erm' sound, often captured this way by transcription software. Functions identically as a filled pause for hesitation."
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "ahh",
+    "language": "en",
+    "bcp47Tags": ["en-US"],
+    "notes": "Spelling variant of 'ah'. A vocalized hesitation marker, often used to signal realization or recognition ('Ah, now I understand'). While it can function as a simple filled pause during a word search, it frequently carries a more specific pragmatic meaning related to information management, marking the speaker's shift in cognitive state.[5, 9] In some contexts, it can also express surprise or other emotions, blurring the line between a filled pause and an interjection.[11, 12]"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "aah",
+    "language": "en",
+    "bcp47Tags": ["en-US"],
+    "notes": "Spelling variant of 'ah'. Represents a lengthened 'ah' sound, often captured this way by transcription software. Functions identically as a hesitation marker or interjection."
   },
   {
     "category": "DISCOURSE_MARKER",
-    "term": "like",
+    "term": "you know",
     "language": "en",
-    "region": "Global",
-    "notes": "Common discourse marker used in informal speech."
+    "bcp47Tags": ["en-GB", "en-US", "en-AU", "en-CA", "en-IE", "en-NZ"],
+    "notes": "A discourse marker used to appeal to shared knowledge between the speaker and listener ('the defence was, you know, the same as always'). This function serves to build common ground and solidarity. It can also function as a filler to gain planning time, a hedge to soften a statement, an emphasis marker, or a device to make speech more casual and build rapport.[2, 19] Its function can be persuasive, seeking to confirm understanding or build solidarity, which can sometimes position it functionally closer to a placating tag.[2, 20]"
   },
   {
     "category": "DISCOURSE_MARKER",
-    "term": "so",
+    "term": "y'know",
     "language": "en",
-    "region": "Global",
-    "notes": "Discourse marker indicating continuation or conclusion."
+    "bcp47Tags": ["en"],
+    "notes": "Colloquial transcription variant of 'you know'. Functions identically."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "ya know",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "Colloquial transcription variant of 'you know'. Functions identically."
   },
   {
     "category": "DISCOURSE_MARKER",
     "term": "well",
     "language": "en",
-    "region": "Global",
-    "notes": "Discourse marker indicating hesitation or topic shift."
+    "bcp47Tags": ["en"],
+    "notes": "A versatile discourse marker used to preface a response, often signaling that the response is complex, unexpected, or requires thought ('Well, it's difficult to say'). Its functions are primarily interactional: 1) as a qualifier, it prefaces a partial or indirect answer; 2) as a face-threat mitigator, it softens a disagreement or refusal; 3) as a frame, it introduces a new topic or reported speech; and 4) as a pause filler, it buys time for thought.[22, 23] Unlike purely hesitant filled pauses, 'well' adds significant pragmatic value, conveying the speaker's stance towards the upcoming utterance.[24, 25]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "so",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A discourse connective that primarily marks a relationship of cause, result, or inference ('It was raining, so I took an umbrella'). In spoken discourse, it has undergone semantic bleaching and is frequently used as a structural marker to introduce a new topic, summarize a preceding stretch of talk, or to take the conversational floor at the beginning of a turn.[5, 12] This boundary-marking use is a key feature of its function in managing conversational flow.[12, 26]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "soo",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "Spelling variant of 'so', representing a lengthened vowel. Often used for emphasis or to more strongly signal a transition or summary. 'Soo, what are we doing?'"
   },
   {
     "category": "DISCOURSE_MARKER",
     "term": "basically",
     "language": "en",
-    "region": "Global",
-    "notes": "Discourse marker used to simplify or summarize."
+    "bcp47Tags": ["en"],
+    "notes": "A discourse marker used to signal that the speaker is about to provide a summary or state the most essential point of a matter. It functions as a structural marker that guides the listener's interpretation by highlighting the core message ('Basically, we don't have enough funding'). In informal speech, its use can sometimes be extended to that of a general filler, where its summarizing function is weakened.[5, 12]"
   },
   {
     "category": "DISCOURSE_MARKER",
-    "term": "actually",
+    "term": "okay",
     "language": "en",
-    "region": "Global",
-    "notes": "Discourse marker used for correction or emphasis."
+    "bcp47Tags": ["en"],
+    "notes": "A ubiquitous discourse marker with multiple functions. It can be used as a backchannel to signal comprehension and agreement, as a structural marker to signal the transition to a new topic or the closing of a conversation, or to check for the listener's understanding.[5, 28] Its versatility makes it a crucial tool for managing the structure and interpersonal dynamics of a conversation.[12, 26]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "ok",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "Common spelling variant of 'okay'. Functions identically."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "kind of",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A common hedge or approximator used to soften a statement or indicate imprecision. 'It was, kind of, strange.' Often reduced to 'kinda'."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "kinda",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "Colloquial transcription variant of 'kind of'. Functions identically as a hedge or approximator."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "notes": "A common hedge or approximator, synonymous with 'kind of', but with a stronger preference in British and Commonwealth English. 'I'm, sort of, ready.' Often reduced to 'sorta'."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "sorta",
+    "language": "en",
+    "bcp47Tags": ["en-GB", "en-AU", "en-NZ", "en-IE"],
+    "notes": "Colloquial transcription variant of 'sort of'. Functions identically as a hedge or approximator."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "seriously",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A stance marker used to add emphasis, check for listener seriousness, or signal a shift to a more serious topic. 'Seriously, that was the best_movie_ever.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "anyway",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A discourse marker used to resume a previous topic after a digression, to change the topic, or to move towards the end of a conversation. 'Anyway, as I was saying...'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "to be honest",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A stance marker used to preface an opinion or a potentially face-threatening statement, signaling candor. 'To be honest, I didn't like it very much.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "at the end of the day",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A discourse marker used to signal a summary or a final, definitive conclusion. 'At the end of the day, it's his decision.'"
   },
   {
     "category": "PLACATING_TAG",
-    "term": "you know",
+    "term": "innit",
     "language": "en",
-    "region": "Global",
-    "notes": "Placating phrase seeking agreement or understanding."
+    "bcp47Tags": ["en-GB"],
+    "notes": "An invariant tag question that has evolved from a contraction of 'isn't it'. In modern vernacular British English, especially in urban centers like London (Multicultural London English), its use has generalized to replace a wide range of standard, grammatically complex tag questions, irrespective of the main clause's subject, verb, or polarity ('We need to decide what to do now, innit?').[29, 30] This process of simplification and generalization is a classic example of language change in progress, driven by sociolinguistic factors. The use of 'innit' functions not only to seek agreement but also serves as a powerful marker of youth identity and in-group affiliation.[30, 31]"
   },
   {
     "category": "PLACATING_TAG",
     "term": "right?",
     "language": "en",
-    "region": "Global",
-    "notes": "Tag question seeking confirmation."
+    "bcp47Tags": ["en-US", "en-CA"],
+    "notes": "A common, informal invariant tag used to seek confirmation or agreement from the listener. It is cognitively simpler than forming a canonical, polarity-reversing tag question and serves a similar pragmatic function of building consensus and checking comprehension.[5, 21] Its use is characteristic of informal, interactive speech where maintaining interpersonal alignment is a priority.[12, 30]"
   },
   {
     "category": "PLACATING_TAG",
     "term": "you see",
     "language": "en",
-    "region": "Global",
-    "notes": "Placating phrase seeking understanding or agreement."
+    "bcp47Tags": ["en"],
+    "notes": "A placating tag, similar to 'you know', used to check for listener comprehension or to imply that the information should be understood. 'It's a complex problem, you see.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "I guess",
+    "language": "en",
+    "bcp47Tags": ["en-US", "en-CA"],
+    "notes": "A hedge used to soften a statement, express uncertainty, or show reluctance. 'I guess I can do that.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "if you will",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A hedge used to signal that a word or phrase is metaphorical, unusual, or perhaps slightly imprecise. 'It's a sort of linguistic punctuation, if you will.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "so to speak",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A hedge used to mark a statement as figurative or non-literal, synonymous with 'if you will'. 'He really hit a home run on that project, so to speak.'"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "let's see",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A lexicalized filled pause used to signal that the speaker is searching for information, recalling a memory, or making a calculation. 'Let's see, that would be five pounds.'"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "let me think",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "An explicit lexicalized filled pause, clearly stating the speaker's need for cognitive processing time. 'Let me think... I believe it was last Tuesday.'"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "how should I put this",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A lexicalized filled pause used to signal that the speaker is searching for the right words, often to phrase something diplomatically or precisely. 'It's... how should I put this... not my favorite.'"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "what's the word",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A lexicalized filled pause used to explicitly signal a word-finding difficulty (lexical retrieval). 'I'm looking for the... what's the word... the key idea.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "I suppose",
+    "language": "en",
+    "bcp47Tags": ["en-GB", "en"],
+    "notes": "A hedge used to soften an assertion or express a degree of uncertainty, often with a slightly more formal or British-leaning connotation than 'I guess'. 'I suppose that's one way to look at it.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "as it were",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A hedge, synonymous with 'so to speak', used to mark a statement as metaphorical or imprecise. 'He's the king of the team, as it were.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "in a sense",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A hedge used to qualify a statement, indicating that it is true only from a certain perspective. 'In a sense, he was right.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "right so",
+    "language": "en",
+    "bcp47Tags": ["en-GB", "en-AU", "en-IE"],
+    "notes": "A discourse marker used to transition to a new topic or summarize a previous point, common in British, Irish, and Australian English. 'Right so, let's get started.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "okay so",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A discourse marker used to transition to a new topic or begin a new line of reasoning. 'Okay so, the first thing we need to do is...'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "I don't know",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "Functions as a hedge or filler to express uncertainty or to soften an opinion. 'It's, I don't know, kind of weird.' Often reduced to 'I dunno'."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "I dunno",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "Colloquial transcription variant of 'I don't know'. Functions identically as a hedge or filler."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "or whatever",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A hedge used to signal imprecision or to trail off a list, indicating that other similar items could be included. 'You can add cheese, bacon, or whatever.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "and stuff",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A hedge used to vaguely refer to other related items, similar to 'and things like that'. 'We just talked about movies and stuff.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "and things like that",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A hedge used to generalize from a list of examples. 'He's into hiking, camping, and things like that.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "whatnot",
+    "language": "en",
+    "bcp47Tags": ["en"],
+    "notes": "A hedge used at the end of a list to mean 'and other similar things'. 'They sell books, pens, and whatnot.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "ara",
+    "language": "en",
+    "bcp47Tags": ["en-IE"],
+    "notes": "A common discourse marker in Hiberno-English (Irish English), cognate with 'ah' or 'well'. Used to preface a statement, often with mild surprise, resignation, or emphasis. 'Ara, it'll be fine.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "musha",
+    "language": "en",
+    "bcp47Tags": ["en-IE"],
+    "notes": "A discourse marker in Hiberno-English (Irish English), expressing surprise, agreement, or mild resignation, similar to 'well...' or 'oh, well'. 'Musha, I don't know about that.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "ja",
+    "language": "en",
+    "bcp47Tags": ["en-ZA"],
+    "notes": "A very common discourse marker in South African English (borrowed from Afrikaans), meaning 'yes'. Used as a frequent backchannel and agreement marker, 'Ja, that's right.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "ag",
+    "language": "en",
+    "bcp47Tags": ["en-ZA"],
+    "notes": "A discourse marker in South African English (borrowed from Afrikaans), similar to 'oh' or 'ah'. Used to express a wide range of emotions, including resignation, irritation, or sympathy. 'Ag, shame.' ('Oh, what a shame.')."
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "na",
+    "language": "en",
+    "bcp47Tags": ["en-IN", "hi"],
+    "notes": "A very common invariant tag in Indian English (and Hindi), appended to a statement to seek confirmation or soften it, equivalent to 'right?' or 'isn't it?'. 'You are coming, na?'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "yeah, no",
+    "language": "en",
+    "bcp47Tags": ["en-AU", "en-US", "en-ZA"],
+    "notes": "A complex discourse marker characteristic of Australian English, also found in other varieties such as American and South African English. It typically signals disagreement or a negative response (e.g., 'Yeah, nah, I can't make it'). The initial 'yeah' serves a crucial pragmatic function of acknowledging the listener's premise, question, or perspective before contradicting it, thus acting as a politeness or face-saving strategy to mitigate the disagreement.[32, 33] Its meaning can be modulated by intonation and is a subject of significant sociolinguistic research, often perceived as being associated with younger speakers.[34, 35]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "no, yeah",
+    "language": "en",
+    "bcp47Tags": ["en-AU", "en-US"],
+    "notes": "A discourse marker characteristic of Australian English, often used as a counterpart to 'yeah, no'. It typically signals agreement or a positive response (e.g., 'Nah, yeah, that's a good point'). The initial 'no' or 'nah' often serves to counter an assumed negative presupposition from the listener or to correct a potential misunderstanding before affirming the point.[32, 36] For example, in response to 'You probably didn't like it,' a speaker might say, 'Nah yeah, it was great.' The sequence serves to manage expectations and affirm a stance strongly.[37, 38]"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "euh",
+    "language": "fr",
+    "bcp47Tags": ["fr"],
+    "notes": "The most common filled pause in spoken French, functionally equivalent to English 'uh' or 'um'. It is a non-lexical hesitation marker used to gain time for cognitive processing. Research on spoken French corpora indicates that 'euh' can have a dual status: it can reflect 'disfluent' hesitation when occurring in a medial position within a clause, but it can also serve more 'fluent' discourse-structuring functions when it appears in an initial position, often clustered with another discourse marker.[1, 5] This demonstrates the functional complexity of what is often considered a simple hesitation sound.[39, 40]"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "eum",
+    "language": "fr",
+    "bcp47Tags": ["fr"],
+    "notes": "A nasal-final filled pause in French, functionally similar to 'euh' and English 'um'. Like 'euh', it is used to signal hesitation and ongoing speech planning. Some analyses suggest that nasal-final filled pauses may be associated with longer or more complex planning phases than their non-nasal counterparts, a pattern observed across several languages.[1, 8]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "du coup",
+    "language": "fr",
+    "bcp47Tags": ["fr-FR"],
+    "notes": "A highly frequent discourse marker in contemporary spoken French (France), roughly meaning 'so', 'as a result', or 'consequently'. It originally marked a direct consequential relationship, but its use has expanded significantly, particularly among younger speakers, to become a more general marker for connecting ideas or even as a simple hesitation filler.[5, 41] Its proliferation in modern French is a notable sociolinguistic phenomenon."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "en fait",
+    "language": "fr",
+    "bcp47Tags": ["fr"],
+    "notes": "A discourse marker meaning 'in fact' or 'actually'. It is used to correct, specify, or elaborate on a previous statement, often introducing a nuance, a contrast, or a reality that contradicts a prior assumption.[41] It functions to manage the flow of information and guide the listener's interpretation by signaling a refinement of what has been said."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "bah",
+    "language": "fr",
+    "bcp47Tags": ["fr"],
+    "notes": "An informal discourse marker, often considered a reduced form of 'eh bien' ('well'). It is used to preface a response, frequently one that the speaker considers obvious or self-evident ('Bah oui' = 'Well, yeah, of course'). It signals a relaxed, informal stance and is a key feature of casual conversational French.[5, 39] It can also be used simply to fill a pause while formulating a thought.[40]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "quoi",
+    "language": "fr",
+    "bcp47Tags": ["fr-FR"],
+    "notes": "A polyfunctional and highly informal discourse marker, typically used at the end of an utterance. It does not carry its literal meaning of 'what' but serves to add emphasis, signal a summary, or convey a 'that's just how it is' attitude ('J'ai juste fait une erreur, quoi' = 'I just made a mistake, that's all'). Its function can be loosely compared to English 'you know' or 'or whatever' in some contexts, serving as a marker of informal register and shared understanding.[5, 39] Its correct usage is a subtle aspect of native-like fluency.[41]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "genre",
+    "language": "fr",
+    "bcp47Tags": ["fr-FR"],
+    "notes": "An informal discourse marker, particularly prevalent among younger speakers, that functions similarly to the English discourse marker 'like'. It can be used as an approximator or hedge ('Il avait, genre, trente ans' = 'He was, like, thirty years old'), as a quotative to introduce reported speech or thought, or to signal that what follows is an example or a certain style of something.[5, 39] Its use is a strong indicator of informal, contemporary speech.[41]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "voilà",
+    "language": "fr",
+    "bcp47Tags": ["fr"],
+    "notes": "A discourse marker used to conclude a thought, signal agreement, or present a result. 'And that's that, voilà.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "enfin",
+    "language": "fr",
+    "bcp47Tags": ["fr"],
+    "notes": "A discourse marker used for self-correction, clarification, or to express impatience. 'I mean' or 'anyway'. 'Let's go, enfin, if you're ready.'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "bon",
+    "language": "fr",
+    "bcp47Tags": ["fr"],
+    "notes": "A discourse marker used to transition topics, signal the start of a new action, or express mild resignation. 'Good' or 'right'. 'Bon, on commence.' ('Right, let's start.')."
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "n'est-ce pas?",
+    "language": "fr",
+    "bcp47Tags": ["fr"],
+    "notes": "The standard, formal invariant tag question in French, equivalent to 'isn't it?', 'right?', etc. It is appended to a statement to seek confirmation or agreement from the listener. Unlike English standard tags, it does not change based on the verb or subject of the main clause, making it a grammatically simple way to solicit a response.[29]"
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "tu vois?",
+    "language": "fr",
+    "bcp47Tags": ["fr"],
+    "notes": "An informal placating tag, literally 'you see?'. Functions exactly like English 'you see?' or 'you know?' to check for comprehension or build rapport."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "pues",
+    "language": "es",
+    "bcp47Tags": ["es"],
+    "notes": "A highly versatile and frequent discourse marker in Spanish, roughly equivalent to 'well' or 'so'. It is used to buy time while thinking ('Pues... no sé'), soften a statement, introduce a topic, or show hesitation. Its specific function is highly context-dependent and is a hallmark of natural, spontaneous speech across the Spanish-speaking world.[42, 43]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "o sea",
+    "language": "es",
+    "bcp47Tags": ["es"],
+    "notes": "A discourse marker used for clarification or restatement, equivalent to 'I mean' or 'in other words'. It signals that the speaker is about to explain their previous point in a different way or make their meaning more precise ('Estudiamos todos los días, o sea, nos esforzamos mucho').[42, 43]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "bueno",
+    "language": "es",
+    "bcp47Tags": ["es"],
+    "notes": "A very common discourse marker, similar to 'well' or 'okay'. It is used at the start of an utterance to give an opinion, shift topics, express slight reservation, or signal exasperation depending on intonation ('Bueno, creo que es hora de irnos'). Its flexibility makes it a cornerstone of conversational management in Spanish.[42, 43]"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "este",
+    "language": "es",
+    "bcp47Tags": ["es-MX", "es-AR", "es-CO", "es-VE"],
+    "notes": "A common filled pause in many varieties of Latin American Spanish. Although it is a lexical item (meaning 'this'), in this context it functions purely as a non-propositional hesitation marker, equivalent to English 'um' or 'uh', used to fill silence while the speaker is thinking.[42, 43]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "en plan",
+    "language": "es",
+    "bcp47Tags": ["es-ES"],
+    "notes": "A very common discourse marker in Peninsular Spanish (Spain), especially among younger speakers. Functions similarly to English 'like'. 'Y él me dice, en plan, que no quería venir.' ('And he tells me, like, he didn't want to come.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "claro",
+    "language": "es",
+    "bcp47Tags": ["es"],
+    "notes": "A common backchannel and discourse marker, meaning 'of course' or 'right'. Used to affirm the speaker's point or signal comprehension."
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "¿sabes?",
+    "language": "es",
+    "bcp47Tags": ["es-ES"],
+    "notes": "An invariant tag, equivalent to English 'you know?'. It is appended to an utterance to check for listener comprehension, seek agreement, and create a more informal, conversational tone ('Es muy importante para mí, ¿sabes?'). It serves an important interpersonal function by actively involving the listener in the conversation.[43]"
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "¿verdad?",
+    "language": "es",
+    "bcp47Tags": ["es"],
+    "notes": "A standard invariant tag question, meaning 'right?' or 'true?'. It is used to seek confirmation of the preceding statement and is common in both formal and informal registers across the Spanish-speaking world. It is functionally similar to French 'n'est-ce pas?' and German 'nicht wahr?'.[29]"
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "¿viste?",
+    "language": "es",
+    "bcp47Tags": ["es-AR", "es-UY"],
+    "notes": "An invariant tag question, literally 'you saw?'. Very common in Rioplatense Spanish (Argentina, Uruguay) to mean 'you see?' or 'you know?'. 'Fue una locura, ¿viste?'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "vale",
+    "language": "es",
+    "bcp47Tags": ["es-ES"],
+    "notes": "A very common discourse marker in Peninsular Spanish (Spain), meaning 'okay', 'right', or 'fine'. Used as a backchannel, transition marker, or to signal agreement."
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "äh",
+    "language": "de",
+    "bcp47Tags": ["de"],
+    "notes": "A primary non-lexical, non-nasal filled pause in German, equivalent to English 'uh'. It is a universal sound used to signal hesitation and cognitive planning during spontaneous speech.[11, 44] It can occur at any point in an utterance and is a key indicator of speech production processes.[45]"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "ähm",
+    "language": "de",
+    "bcp47Tags": ["de"],
+    "notes": "A common nasal-final filled pause in German, equivalent to English 'um'. It is functionally similar to 'äh' but, as in other Germanic languages, the nasal ending may signal a slightly longer or more profound pause for thought.[11, 45]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "also",
+    "language": "de",
+    "bcp47Tags": ["de"],
+    "notes": "A frequent discourse marker used to start a sentence, connect ideas, or draw a conclusion. It can translate as 'so' or 'well' depending on context ('Also, was machen wir heute?'). It serves as a key structural device for organizing discourse.[45]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "halt",
+    "language": "de",
+    "bcp47Tags": ["de"],
+    "notes": "A modal particle that functions as a discourse marker, with no direct English equivalent. It is extremely common in spoken German and adds a specific pragmatic nuance to an utterance, often implying 'just', 'simply', a sense of inevitability, or slight resignation ('Es ist halt so' = 'That's just the way it is'). Its meaning is highly dependent on context and is best learned through exposure.[44, 45]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "genau",
+    "language": "de",
+    "bcp47Tags": ["de"],
+    "notes": "A discourse marker and common backchannel, meaning 'exactly' or 'right'. Used to show strong agreement with the speaker."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "sozusagen",
+    "language": "de",
+    "bcp47Tags": ["de"],
+    "notes": "A discourse marker meaning 'so to speak' or 'as it were'. Used as a hedge to soften a statement or mark it as figurative. 'Er ist, sozusagen, der Chef.' ('He is, so to speak, the boss.')."
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "nicht wahr?",
+    "language": "de",
+    "bcp47Tags": ["de"],
+    "notes": "A standard, somewhat formal invariant tag question, equivalent to 'isn't it true?'. It is used to seek confirmation from the listener and is applicable in a wide range of contexts.[29]"
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "oder?",
+    "language": "de",
+    "bcp47Tags": ["de-DE", "de-CH", "de-AT"],
+    "notes": "A common, more informal invariant tag question, literally meaning 'or?'. It is appended to the end of a statement to turn it into a question seeking confirmation, similar to English 'right?'. It is very frequent in casual conversation.[29]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "oder so",
+    "language": "de",
+    "bcp47Tags": ["de"],
+    "notes": "A discourse marker meaning 'or something'. Used as an approximator or hedge, similar to English 'or something like that'. 'Wir treffen uns um drei, oder so.' ('We'll meet at three, or something.')."
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "ええと (eeto)",
+    "language": "ja",
+    "bcp47Tags": ["ja"],
+    "notes": "A very common filled pause in Japanese, equivalent to 'let me see' or 'um'. It is used when processing information, searching for words, or deliberating a response. Unlike in some Western cultures, its use is socially acceptable even in professional contexts and can signal thoughtfulness rather than unpreparedness. The more casual variant is えっと (etto).[46, 47] Its distribution in speech can correlate with syntactic boundaries, suggesting a role in utterance planning.[48, 49]"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "那个 (nà ge)",
+    "language": "zh",
+    "bcp47Tags": ["zh-CN"],
+    "notes": "Literally meaning 'that one', this is one of the most common and characteristic filled pauses in Mandarin Chinese. It is used extensively to fill silence while thinking, functioning like 'um' or 'uh' in English. Its frequent use is a hallmark of natural, spontaneous spoken Chinese and can be used to gain time before broaching an awkward topic or searching for the right word.[51]"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "呃 (e)",
+    "language": "zh",
+    "bcp47Tags": ["zh-CN"],
+    "notes": "A non-lexical, non-nasal filled pause, phonetically similar to English 'uh'. Research on Mandarin speech corpora identifies it as one of the two basic pause fillers (along with 'en'). Studies have shown sociolinguistic variation in its use, with male speakers using 'e' more frequently than female speakers.[51, 52]"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "嗯 (en)",
+    "language": "zh",
+    "bcp47Tags": ["zh-CN"],
+    "notes": "A non-lexical, nasal-final filled pause, similar to English 'um' or 'hmm'. It is identified as a basic pause filler in Mandarin. In contrast to 'e' (呃), its frequency of use does not appear to differ significantly between male and female speakers, leading to a higher proportion of nasal-final fillers in female speech, a pattern also observed in Germanic languages.[52]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "然后 (rán hòu)",
+    "language": "zh",
+    "bcp47Tags": ["zh-CN"],
+    "notes": "Literally meaning 'and then', this phrase is used to connect a sequence of events. In modern spoken discourse, it has undergone pragmaticalization and now functions as a general discourse marker for topic continuation or shifting, not strictly limited to temporal sequence. Its prosodic features (pitch, duration) can distinguish its discourse function from its literal lexical function.[51, 53] It also indexes the role of the teller in a narrative context.[54, 55]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "就是 (jiù shì)",
+    "language": "zh",
+    "bcp47Tags": ["zh-CN"],
+    "notes": "Literally 'is just', this discourse marker is used for clarification, emphasis, or explanation, similar to 'that is to say' or 'I mean'. It is often employed when discussing something difficult, making a point clear, or rephrasing a thought ('就是吧...我其实很喜欢你' = 'Well, the thing is... I've actually always liked you').[51, 54]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "我觉得 (wǒ juéde)",
+    "language": "zh",
+    "bcp47Tags": ["zh-CN"],
+    "notes": "Literally 'I think' or 'I feel', this phrase functions as a discourse marker to introduce an opinion or subjective assessment. It serves to frame the following statement as the speaker's personal view, thereby hedging the assertion and managing the interpersonal dynamics of the conversation. Its prosodic realization can differentiate its discourse-marking function from its literal use.[53, 55]"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "这个 (zhè ge)",
+    "language": "zh",
+    "bcp47Tags": ["zh-CN"],
+    "notes": "Literally 'this one'. Functions identically to '那个 (nà ge)' as a common filled pause to gain time while thinking. Speakers often alternate between 'nà ge' and 'zhè ge'."
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "अ (a)",
+    "language": "hi",
+    "bcp47Tags": ["hi"],
+    "notes": "A non-lexical, schwa-like sound filler used for hesitation in Hindi, functionally equivalent to English 'uh'. It is a basic vocalization used to fill pauses during speech planning.[5]"
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "हूँ (hoon)",
+    "language": "hi",
+    "bcp47Tags": ["hi"],
+    "notes": "A nasal-final sound filler used for hesitation, equivalent to English 'um' or 'hmm'. It is used to signal that the speaker is thinking or listening thoughtfully.[5, 56] This is distinct from the first-person singular verb हूँ (hū̃), 'am'.[5]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "मतलब (matlab)",
+    "language": "hi",
+    "bcp47Tags": ["hi", "ur"],
+    "notes": "Literally 'meaning', this discourse marker is used for clarification or explanation, equivalent to 'I mean'. It is frequently used to rephrase a statement, provide an example, or soften speech, especially when discussing delicate topics.[5, 56] Its function is to ensure the listener correctly interprets the speaker's intention.[5, 57]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "अच्छा (acchaa)",
+    "language": "hi",
+    "bcp47Tags": ["hi", "ur"],
+    "notes": "A highly multipurpose discourse marker with a range of functions dependent on context and intonation. It can express affirmation ('okay'), surprise or realization ('oh!', 'really!'), or serve as a backchannel to show one is listening. This versatility makes it a cornerstone of Hindi conversation for managing information and interaction.[56]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "वो ना (woh na)",
+    "language": "hi",
+    "bcp47Tags": ["hi"],
+    "notes": "A common discourse marker in Hindi, literally translating to 'that, no/right?'. It functions as a filler to gain time and to draw the listener's attention to the subject being discussed, similar to saying 'that thing...' or 'you know...' before elaborating.[5, 57]"
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "जानते हो (jaante ho)",
+    "language": "hi",
+    "bcp47Tags": ["hi"],
+    "notes": "An invariant tag, equivalent to English 'you know?'. It is used to check for shared knowledge, to make a statement more conversational and engaging, or to draw the listener into the narrative. It is a common strategy for building rapport.[56]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "allora",
+    "language": "it",
+    "bcp47Tags": ["it"],
+    "notes": "A ubiquitous discourse marker in Italian, meaning 'so', 'then', or 'well'. Used to begin a narrative, transition topics, or fill a pause to gather thoughts. 'Allora, cosa facciamo?' ('So, what are we doing?')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "cioè",
+    "language": "it",
+    "bcp47Tags": ["it"],
+    "notes": "A discourse marker for clarification, meaning 'that is' or 'I mean'. Used to rephrase or specify a point. 'Vengo domani, cioè, martedì.' ('I'm coming tomorrow, I mean, Tuesday.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "tipo",
+    "language": "it",
+    "bcp47Tags": ["it"],
+    "notes": "An informal discourse marker, especially common among younger speakers, functioning exactly like English 'like'. Used as an approximator, hedge, or quotative. 'Era, tipo, altissimo.' ('He was, like, super tall.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "ecco",
+    "language": "it",
+    "bcp47Tags": ["it"],
+    "notes": "A discourse marker used to signal conclusion, agreement, or realization, similar to 'there' or 'right'. 'Ecco, hai capito.' ('There, you've understood.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "praticamente",
+    "language": "it",
+    "bcp47Tags": ["it"],
+    "notes": "A discourse marker meaning 'practically' or 'basically'. Used to summarize a point or as a hedge. 'Praticamente, non abbiamo scelta.' ('Basically, we have no choice.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "niente",
+    "language": "it",
+    "bcp47Tags": ["it"],
+    "notes": "Literally 'nothing'. Used as a discourse marker to dismiss a topic, or as a filler when hesitating. 'Niente, non mi ricordo.' ('Nevermind, I don't remember.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "então",
+    "language": "pt",
+    "bcp47Tags": ["pt-BR", "pt-PT"],
+    "notes": "A very common discourse marker in Portuguese, meaning 'so' or 'then'. Used to start a sentence, transition, or draw a conclusion."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "tipo",
+    "language": "pt",
+    "bcp47Tags": ["pt-BR", "pt-PT"],
+    "notes": "An informal discourse marker functioning as a direct equivalent of English 'like'. Used as a hedge, approximator, or filler."
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "né?",
+    "language": "pt",
+    "bcp47Tags": ["pt-BR", "pt-PT"],
+    "notes": "A universal placating tag, a contraction of 'não é?' ('isn't it?'). Used constantly to seek agreement or confirmation, similar to 'right?'."
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "tá?",
+    "language": "pt",
+    "bcp47Tags": ["pt-BR"],
+    "notes": "A placating tag, common in Brazilian Portuguese, a contraction of 'está?' ('is it?'). Used to check for understanding, similar to 'okay?' or 'got it?'."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "aí",
+    "language": "pt",
+    "bcp47Tags": ["pt-BR"],
+    "notes": "Literally 'there'. In Brazilian Portuguese, it's used extensively as a narrative connective, meaning 'so' or 'then'. 'Aí, ele me disse...' ('So, he told me...')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "tipo assim",
+    "language": "pt",
+    "bcp47Tags": ["pt-BR"],
+    "notes": "A common filler phrase in Brazilian Portuguese, literally 'like this'. Functions identically to 'like' as a hedge or filler. 'Ela é, tipo assim, muito legal.' ('She is, like, really cool.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "ну (nu)",
+    "language": "ru",
+    "bcp47Tags": ["ru"],
+    "notes": "A highly frequent discourse marker in Russian, similar to 'well' or 'so'. Used to preface a response, show hesitation, or urge action. 'Ну, я не знаю.' ('Well, I don't know.')."
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "это (eto)",
+    "language": "ru",
+    "bcp47Tags": ["ru"],
+    "notes": "A lexical filled pause, literally 'this (one)'. Functions similarly to Spanish 'este' or Mandarin 'nà ge', used as a placeholder while searching for a word. 'Я, это, забыл.' ('I, um, forgot.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "как бы (kak by)",
+    "language": "ru",
+    "bcp47Tags": ["ru"],
+    "notes": "A discourse marker meaning 'as if' or 'like'. Used as a hedge to express uncertainty or soften a statement. Its overuse is a strong feature of contemporary informal Russian."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "значит (znachit)",
+    "language": "ru",
+    "bcp47Tags": ["ru"],
+    "notes": "A discourse marker meaning 'so' or 'it means'. Used to draw a logical conclusion or as a filler to structure a thought. 'Ты опоздал, значит, ты пропустил.' ('You were late, so, you missed it.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "в общем (v obshchem)",
+    "language": "ru",
+    "bcp47Tags": ["ru"],
+    "notes": "A discourse marker meaning 'in general' or 'basically'. Used to summarize or hedge. 'В общем, всё хорошо.' ('Basically, everything is fine.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "короче (koroche)",
+    "language": "ru",
+    "bcp47Tags": ["ru"],
+    "notes": "A discourse marker meaning 'in short' or 'to make a long story short'. Used to summarize or transition, often impatiently. 'Короче, мы ушли.' ('Anyway, we left.')."
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "어 (eo)",
+    "language": "ko",
+    "bcp47Tags": ["ko"],
+    "notes": "A non-lexical filled pause, similar to English 'uh'. Used to signal hesitation or cognitive processing."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "막 (mak)",
+    "language": "ko",
+    "bcp47Tags": ["ko"],
+    "notes": "An informal discourse marker used as an intensifier or filler, often to add a nuance of 'just' or 'recklessly' or 'like'. '내가 막 뛰어갔어.' ('I just, like, ran.')."
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "있잖아요 (itjjanayo)",
+    "language": "ko",
+    "bcp47Tags": ["ko"],
+    "notes": "A very common placating tag, meaning 'you know' or 'as you know'. Used to introduce a topic, seek agreement, or soften a statement by appealing to shared knowledge."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "이제 (ije)",
+    "language": "ko",
+    "bcp47Tags": ["ko"],
+    "notes": "Literally 'now'. Used as a discourse marker to transition to a new topic or action, similar to 'so' or 'well then'. '이제, 다음...' ('So, next...')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "진짜 (jinjja)",
+    "language": "ko",
+    "bcp47Tags": ["ko"],
+    "notes": "Literally 'really'. Used as a discourse marker (intensifier) to add emphasis, similar to 'seriously' or 'literally'. '진짜 맛있어요.' ('It's seriously delicious.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "يعني (yaʿni)",
+    "language": "ar",
+    "bcp47Tags": ["ar"],
+    "notes": "A very common discourse marker across the Arabic-speaking world, literally meaning 'it means'. It is used for clarification, hesitation, or as a general filler to maintain conversational flow. Its function is analogous to English 'I mean' or 'you know'.[5]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "dus",
+    "language": "nl",
+    "bcp47Tags": ["nl-NL", "nl-BE"],
+    "notes": "A common discourse marker in Dutch, literally meaning 'thus' or 'so'. It is used to connect ideas, draw a conclusion, or fill pauses while thinking, similar to English 'so' or German 'also'.[3, 5]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "zeg maar",
+    "language": "nl",
+    "bcp47Tags": ["nl"],
+    "notes": "A discourse marker meaning 'so to speak' or 'let's say'. Functions as a hedge, approximator, or filler, similar to English 'like'. 'Het was, zeg maar, niet zo leuk.' ('It was, like, not that fun.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "niinku",
+    "language": "fi",
+    "bcp47Tags": ["fi"],
+    "notes": "A common discourse marker in Finnish, equivalent to the English discourse marker 'like'. It is used as a hedge, an approximator, and a general filler, particularly in informal speech and among younger speakers.[5]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "כאילו (ke'ilu)",
+    "language": "he",
+    "bcp47Tags": ["he"],
+    "notes": "A highly common discourse marker in Modern Hebrew, literally meaning 'as if'. Its function is analogous to the English discourse marker 'like', used as a hedge, approximator, quotative, and general filler in informal speech.[5]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "ano",
+    "language": "tl",
+    "bcp47Tags": ["tl"],
+    "notes": "A common filler word in Filipino, literally meaning 'what'. It is used as a placeholder when the speaker is searching for a word or name, similar to English 'what's-it-called' or Turkish 'şey'.[5]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "parang",
+    "language": "tl",
+    "bcp47Tags": ["tl"],
+    "notes": "A discourse marker in Filipino meaning 'like' or 'as if'. It is used to express approximation, similarity, or uncertainty, functioning similarly to the English discourse marker 'like' in its hedging capacity.[5]"
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "diba?",
+    "language": "tl",
+    "bcp47Tags": ["tl"],
+    "notes": "An invariant tag question in Filipino, a contraction of 'hindi ba?' which means 'is it not?'. It is appended to a statement to seek confirmation or agreement, similar to English 'right?' or Spanish '¿verdad?'.[5]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "anu",
+    "language": "id",
+    "bcp47Tags": ["id"],
+    "notes": "A common filler word in Indonesian used as a placeholder when a speaker hesitates or is searching for a word. It is functionally similar to Filipino 'ano' or English 'what's-it-called'.[5]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "bhoil",
+    "language": "ga",
+    "bcp47Tags": ["ga-IE", "en-IE"],
+    "notes": "A common discourse marker in Irish, borrowed from English 'well'. It is used to preface a remark, show hesitation, or manage the flow of conversation. Its use in Hiberno-English (en-IE) is also widespread.[5]"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "no",
+    "language": "pl",
+    "bcp47Tags": ["pl"],
+    "notes": "A highly frequent discourse marker in Polish, meaning 'well', 'so', or 'yeah'. Used to preface a statement, show agreement, or fill a pause. 'No, nie wiem.' ('Well, I don't know.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "wiesz",
+    "language": "pl",
+    "bcp47Tags": ["pl"],
+    "notes": "A discourse marker meaning 'you know'. Functions similarly to English 'you know', used to check for shared understanding or as a filler. 'To jest, wiesz, skomplikowane.' ('It's, you know, complicated.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "po prostu",
+    "language": "pl",
+    "bcp47Tags": ["pl"],
+    "notes": "A discourse marker meaning 'simply' or 'just'. Used for clarification or emphasis, similar to 'basically'. 'To jest po prostu niemożliwe.' ('It's simply impossible.')."
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "yyy",
+    "language": "pl",
+    "bcp47Tags": ["pl"],
+    "notes": "A common non-lexical filled pause in Polish, phonetically /ɨ/ or /ɨm/, often transcribed as 'yyy' or 'yyym'. Functions identically to English 'uh' or 'um'."
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "nie?",
+    "language": "pl",
+    "bcp47Tags": ["pl"],
+    "notes": "An invariant tag question, literally 'no?'. Appended to statements to seek confirmation, similar to 'right?'. 'Ładna pogoda, nie?' ('Nice weather, right?')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "liksom",
+    "language": "sv",
+    "bcp47Tags": ["sv"],
+    "notes": "A high-frequency discourse marker, especially among younger speakers, functioning as a direct equivalent of English 'like'. Used as a hedge, approximator, and quotative."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "typ",
+    "language": "sv",
+    "bcp47Tags": ["sv"],
+    "notes": "A discourse marker meaning 'type' or 'like'. Used as an approximator. 'Han var, typ, två meter lång.' ('He was, like, two meters tall.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "ba",
+    "language": "sv",
+    "bcp47Tags": ["sv"],
+    "notes": "An informal discourse marker, a reduction of 'bara' (only/just). Used as a quotative or to add emphasis. 'Och hon ba, 'nej!'' ('And she was just like, 'no!')."
+  },
+  {
+    "category": "PLACATING_TAG",
+    "term": "eller hur?",
+    "language": "sv",
+    "bcp47Tags": ["sv"],
+    "notes": "A standard invariant tag question, literally 'or how?'. Functions as 'right?' or 'isn't it?'. 'Det är kallt idag, eller hur?' ('It's cold today, right?')."
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "ε (e)",
+    "language": "el",
+    "bcp47Tags": ["el"],
+    "notes": "A common non-lexical filled pause in Greek, equivalent to English 'uh'."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "λοιπόν (lipon)",
+    "language": "el",
+    "bcp47Tags": ["el"],
+    "notes": "A ubiquitous discourse marker meaning 'so', 'well', or 'then'. Used to start a story, transition to a new topic, or draw a conclusion. 'Λοιπόν, τι θα κάνουμε;' ('So, what are we going to do?')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "δηλαδή (diladi)",
+    "language": "el",
+    "bcp47Tags": ["el"],
+    "notes": "A discourse marker used for clarification, meaning 'that is', 'I mean', or 'in other words'. 'Έρχομαι αύριο, δηλαδή, την Τρίτη.' ('I'm coming tomorrow, that is, on Tuesday.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "ναι (ne)",
+    "language": "el",
+    "bcp47Tags": ["el"],
+    "notes": "Literally 'yes'. Used extensively as a backchannel ('uh-huh', 'yeah') to show one is listening, not just as a strong agreement."
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "اِ (e)",
+    "language": "fa",
+    "bcp47Tags": ["fa"],
+    "notes": "A common non-lexical filled pause in Farsi (Persian), equivalent to English 'uh' or 'um'."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "دیگه (dige)",
+    "language": "fa",
+    "bcp47Tags": ["fa"],
+    "notes": "A highly frequent discourse marker, often clause-final. It has many functions, including 'so', 'well', 'then', or 'anymore'. 'همینه دیگه' (hamine dige) - 'That's just how it is, so...'"
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "یعنی (ya'ni)",
+    "language": "fa",
+    "bcp47Tags": ["fa", "ar"],
+    "notes": "A discourse marker (borrowed from Arabic) meaning 'that is' or 'I mean'. Used for clarification. 'میام، یعنی، اگه بتونم.' ('I'll come, I mean, if I can.')."
+  },
+  {
+    "category": "FILLED_PAUSE",
+    "term": "aaa",
+    "language": "sw",
+    "bcp47Tags": ["sw"],
+    "notes": "A common non-lexical filled pause in Swahili, equivalent to English 'uh' or 'um'."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "basi",
+    "language": "sw",
+    "bcp47Tags": ["sw"],
+    "notes": "A ubiquitous discourse marker in Swahili, meaning 'so', 'well', 'then', or 'enough'. Used to transition, conclude, or give a command. 'Basi, twende.' ('So, let's go.')."
+  },
+  {
+    "category": "DISCOURSE_MARKER",
+    "term": "yaani",
+    "language": "sw",
+    "bcp47Tags": ["sw", "ar"],
+    "notes": "A discourse marker (borrowed from Arabic) meaning 'that is' or 'I mean'. Used for clarification, emphasis, or as a general filler."
   }
 ]

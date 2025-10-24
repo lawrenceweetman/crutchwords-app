@@ -3,10 +3,10 @@
  */
 
 export interface LexiconEntry {
-  category: 'FILLED_PAUSE' | 'DISCOURSE_MARKER' | 'PLACATING_TAG';
+  category: string; // 'FILLED_PAUSE' | 'DISCOURSE_MARKER' | 'PLACATING_TAG'
   term: string;
   language: string; // e.g., 'en', 'es', 'fr'
-  region: string; // e.g., 'Global', 'UK', 'US'
+  bcp47Tags: string[]; // e.g., ['en-US', 'en-GB', 'en'], ['fr', 'fr-FR']
   notes: string;
 }
 
@@ -17,9 +17,7 @@ export interface TranscriptSegment {
 }
 
 export interface CategoryCounts {
-  FILLED_PAUSE: number;
-  DISCOURSE_MARKER: number;
-  PLACATING_TAG: number;
+  [key: string]: number;
 }
 
 export interface AnalysisResult {
@@ -29,6 +27,3 @@ export interface AnalysisResult {
   fillersPerMinute: number;
   categoryCounts: CategoryCounts;
 }
-
-// Re-export types for easy importing
-export type { LexiconEntry, TranscriptSegment, CategoryCounts, AnalysisResult };
