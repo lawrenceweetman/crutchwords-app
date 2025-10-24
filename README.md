@@ -11,8 +11,10 @@ This repository contains the complete project documentation and requirements. Th
 **Current Phase: P0 - The Walking Skeleton**
 
 - ✅ Project documentation committed
-- 🔄 Setting up development environment (React, TypeScript, Vite)
-- 📝 Next: Implement core application shell
+- ✅ Development environment setup (React, TypeScript, Vite)
+- ✅ Core application shell implemented
+- ✅ GitHub Actions CI/CD pipeline configured
+- 📝 Next: P1 - Real-time speech analysis and user authentication
 
 ## 📚 Documentation
 
@@ -66,6 +68,56 @@ The project is built on a comprehensive set of requirements and guidelines:
    firebase init hosting
    ```
 
+## 🔥 Firebase Setup
+
+The application is configured for Firebase Hosting deployment with automated CI/CD. To set up Firebase:
+
+1. **Create a Firebase project** at [https://console.firebase.google.com](https://console.firebase.google.com)
+
+2. **Enable Hosting** in your Firebase project
+
+3. **Install Firebase CLI** (if not already installed):
+
+   ```bash
+   npm install -g firebase-tools
+   ```
+
+4. **Login to Firebase**:
+
+   ```bash
+   firebase login
+   ```
+
+5. **Initialize Firebase in the project** (if not already done):
+
+   ```bash
+   firebase init hosting
+   ```
+
+6. **Set up environment variables**:
+   Create a `.env.local` file in the project root with your Firebase configuration:
+
+   ```env
+   VITE_FIREBASE_API_KEY=your-api-key-here
+   VITE_FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
+   VITE_FIREBASE_PROJECT_ID=your-project-id
+   VITE_FIREBASE_STORAGE_BUCKET=your-project.appspot.com
+   VITE_FIREBASE_MESSAGING_SENDER_ID=123456789
+   VITE_FIREBASE_APP_ID=1:123456789:web:abcdef123456
+   ```
+
+7. **Set up GitHub Secrets** for CI/CD:
+   - Go to your GitHub repository Settings > Secrets and variables > Actions
+   - Add these secrets:
+     - `FIREBASE_SERVICE_ACCOUNT`: Your Firebase service account JSON
+     - `FIREBASE_PROJECT_ID`: Your Firebase project ID
+
+8. **Deploy manually** (or wait for automatic deployment on push):
+   ```bash
+   npm run build
+   firebase deploy --only hosting
+   ```
+
 ## 🏗️ Project Structure
 
 The application follows a clean, modular architecture:
@@ -83,6 +135,19 @@ src/
 └── @types/        # TypeScript type definitions
 ```
 
+## 📦 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint code quality checks
+- `npm run lint:fix` - Auto-fix ESLint issues
+- `npm run format` - Format code with Prettier
+- `npm run format:check` - Check code formatting
+- `npm run type-check` - Run TypeScript type checking
+- `npm test` - Run test suite
+- `npm run test:coverage` - Run tests with coverage report
+
 ## 🔧 Technology Stack
 
 - **Frontend**: React 18 with TypeScript
@@ -95,6 +160,19 @@ src/
 - **Deployment**: Firebase Hosting with GitHub Actions CI/CD
 - **Testing**: Jest, React Testing Library, jest-axe
 - **Code Quality**: ESLint, Prettier, Husky pre-commit hooks
+
+## 🚀 CI/CD Pipeline
+
+The project includes a comprehensive GitHub Actions workflow that:
+
+- **Triggers** on pushes to `master` and pull requests
+- **Runs** linting, type checking, and tests on every change
+- **Generates** test coverage reports
+- **Builds** the production application
+- **Checks** bundle size for performance monitoring
+- **Deploys** automatically to Firebase Hosting on successful builds
+
+The pipeline ensures code quality and automates deployment, following the "Deploy Early, Deploy Often" principle.
 
 ## 📝 Development Principles
 
