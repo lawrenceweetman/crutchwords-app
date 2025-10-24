@@ -66,13 +66,21 @@ npm run dev  # (without background)
 
 ```bash
 # ✅ CORRECT - One-time execution
-npm run lint
+npm run lint          # general lint
+npm run lint:ci       # stricter CI lint (warnings suppressed with --quiet)
 npm run format
 npm run type-check
 
 # ❌ WRONG - Don't use interactive or watch modes
 npm run lint:fix  # (use sparingly, may change code)
 ```
+
+#### Import Order & ESLint plugins
+
+- Import order is enforced. Group order:
+  1. builtin/external 2) internal (`@/**`) 3) parent/sibling/index 4) type-only
+- Newlines between groups, alphabetical within groups.
+- Additional plugins enabled (warn-first): import, unicorn, sonarjs, security.
 
 ### **Build Commands**
 

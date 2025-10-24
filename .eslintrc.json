@@ -3,7 +3,9 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -13,7 +15,15 @@
       "jsx": true
     }
   },
-  "plugins": ["@typescript-eslint", "react-refresh"],
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "project": ["./tsconfig.json"]
+      },
+      "node": true
+    }
+  },
+  "plugins": ["@typescript-eslint", "react-refresh", "import", "unicorn", "sonarjs", "security"],
   "rules": {
     "prefer-const": "error",
     "no-var": "error",
@@ -21,6 +31,33 @@
     "no-undef": "off",
     "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "@typescript-eslint/no-explicit-any": "warn",
-    "react-refresh/only-export-components": ["warn", { "allowConstantExport": true }]
+    "react-refresh/only-export-components": ["warn", { "allowConstantExport": true }],
+
+    // import/order guidance (warn-first)
+    "import/order": [
+      "warn",
+      {
+        "groups": [["builtin", "external"], ["internal"], ["parent", "sibling", "index"], ["type"]],
+        "pathGroups": [{ "pattern": "@/**", "group": "internal", "position": "before" }],
+        "newlines-between": "always",
+        "alphabetize": { "order": "asc", "caseInsensitive": true }
+      }
+    ],
+
+    // unicorn (opt-in rules, warn-first)
+    "unicorn/prefer-node-protocol": "warn",
+    "unicorn/filename-case": [
+      "warn",
+      { "cases": { "kebabCase": true, "pascalCase": true, "camelCase": true } }
+    ],
+    "unicorn/prevent-abbreviations": "off",
+    "unicorn/prefer-module": "off",
+
+    // sonarjs (warn-first examples)
+    "sonarjs/cognitive-complexity": ["warn", 15],
+    "sonarjs/no-duplicate-string": "off",
+
+    // security plugin (basic checks)
+    "security/detect-object-injection": "off"
   }
 }

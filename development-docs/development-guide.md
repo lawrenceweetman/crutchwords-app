@@ -48,6 +48,12 @@ This section covers technical setup items that are far more time-consuming to re
 - **Solution:**
   - **ESLint:** To find and fix problems in code.
   - **Prettier:** To automatically format all code with a consistent style.
+  - **ESLint Plugins (foundation):** `@typescript-eslint`, `react-hooks`, `import`, `unicorn` (selected rules), `sonarjs` (selected rules), `security` (basic checks).
+    - Start new plugin rules as warnings, then ratchet to errors when stable.
+    - **Import Order:** Enforced via `import/order`
+      - Groups: builtin/external, internal (`@/**`), parent/sibling/index, type-only
+      - Newlines between groups: always
+      - Alphabetize: ascending, case-insensitive
   - **husky & lint-staged:** To set up a **pre-commit hook**. This will automatically run Prettier and ESLint _only_ on the files being committed, ensuring no bad code ever enters the repository.
 
 ### **2.2. Environment Variable Management**
