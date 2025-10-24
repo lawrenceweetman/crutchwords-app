@@ -203,3 +203,11 @@ For ongoing maintenance and dependency updates:
 3. **Test thoroughly:** Full verification after any dependency changes
 4. **Update documentation:** Keep setup instructions current
 5. **Consider migration impact:** Major version updates may require code changes
+
+## **Final important note**
+
+You should follow these rules at all times, but I do not ask you to follow them blindly.
+
+If anything in these instructions seems like it would be contrary - or not condicive towards - great, best-practice, modern software development then flag it with me **immediately** to highlight the issue so that we can review the rules and instructions together.
+
+The same applies to any other instructions in development-guide.md, technical-architecture-guide.md, README.md, or any other project documentation.
