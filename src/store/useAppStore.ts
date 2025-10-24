@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
+
 import { logger } from '@/utils/logger';
 
 /**
@@ -98,69 +99,69 @@ const initialState: AppState = {
 
 export const useAppStore = create<AppStore>()(
   devtools(
-    set => ({
+    (set) => ({
       ...initialState,
 
       // User actions
-      setUser: user => {
+      setUser: (user) => {
         logger.info('Setting user', { userId: user?.id, isAnonymous: user?.isAnonymous });
         set({ user, isAuthenticated: !!user });
       },
 
-      setAuthenticated: isAuthenticated => {
+      setAuthenticated: (isAuthenticated) => {
         logger.info('Setting authentication state', { isAuthenticated });
         set({ isAuthenticated });
       },
 
       // Recording actions
-      setRecording: isRecording => {
+      setRecording: (isRecording) => {
         logger.info('Setting recording state', { isRecording });
         set({ isRecording });
       },
 
-      setTranscript: currentTranscript => {
+      setTranscript: (currentTranscript) => {
         set({ currentTranscript });
       },
 
-      setAnalysis: currentAnalysis => {
+      setAnalysis: (currentAnalysis) => {
         logger.debug('Setting current analysis', { currentAnalysis });
         set({ currentAnalysis });
       },
 
       // Session actions
-      addSession: session => {
+      addSession: (session) => {
         logger.info('Adding new session', {
           sessionId: session.id,
           fillerCount: session.analysis.totalFillerCount,
         });
-        set(state => ({
+        set((state) => ({
           sessions: [session, ...state.sessions],
         }));
       },
 
       updateSession: (sessionId, updates) => {
         logger.info('Updating session', { sessionId, updates });
-        set(state => ({
-          sessions: state.sessions.map(session =>
+        set((state) => ({
+          sessions: state.sessions.map((session) =>
             session.id === sessionId ? { ...session, ...updates } : session
           ),
         }));
       },
 
-      deleteSession: sessionId => {
+      deleteSession: (sessionId) => {
         logger.info('Deleting session', { sessionId });
-        set(state => ({
-          sessions: state.sessions.filter(session => session.id !== sessionId),
+        set((state) => ({
+          sessions: state.sessions.filter((session) => session.id !== sessionId),
         }));
       },
 
       // UI actions
-      setLoading: isLoading => {
+      setLoading: (isLoading) => {
         logger.debug('Setting loading state', { isLoading });
         set({ isLoading });
       },
 
-      setError: error => {
+      setError: (error) => {
         if (error) {
           logger.error('Setting error state', { error });
         } else {
@@ -170,7 +171,7 @@ export const useAppStore = create<AppStore>()(
       },
 
       // Settings actions
-      updateSettings: settings => {
+      updateSettings: (settings) => {
         logger.info('Updating settings', { settings });
         set((state: AppState) => ({
           settings: { ...state.settings, ...settings },

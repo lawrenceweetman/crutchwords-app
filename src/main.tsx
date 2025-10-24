@@ -1,12 +1,13 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
+import APP_CONFIG from '@/config/app.config';
+
 import App from './App.tsx';
 import ErrorBoundary from './components/ErrorBoundary';
 
 import './styles/index.css';
 import './utils/i18n'; // Initialize i18n
-import APP_CONFIG from '@/config/app.config';
 
 /**
  * Main entry point for the Fluent application.

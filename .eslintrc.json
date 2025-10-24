@@ -35,7 +35,7 @@
 
     // import/order guidance (warn-first)
     "import/order": [
-      "warn",
+      "error",
       {
         "groups": [["builtin", "external"], ["internal"], ["parent", "sibling", "index"], ["type"]],
         "pathGroups": [{ "pattern": "@/**", "group": "internal", "position": "before" }],
@@ -45,7 +45,7 @@
     ],
 
     // unicorn (opt-in rules, warn-first)
-    "unicorn/prefer-node-protocol": "warn",
+    "unicorn/prefer-node-protocol": "error",
     "unicorn/filename-case": [
       "warn",
       { "cases": { "kebabCase": true, "pascalCase": true, "camelCase": true } }
@@ -54,7 +54,7 @@
     "unicorn/prefer-module": "off",
 
     // sonarjs (warn-first examples)
-    "sonarjs/cognitive-complexity": ["warn", 15],
+    "sonarjs/cognitive-complexity": ["error", 15],
     "sonarjs/no-duplicate-string": "off",
 
     // security plugin (basic checks)

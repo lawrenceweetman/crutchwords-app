@@ -1,7 +1,8 @@
 import '@testing-library/jest-dom';
-import { vi } from 'vitest';
-import i18n from '@/utils/i18n';
 import { I18nextProvider } from 'react-i18next';
+import { vi } from 'vitest';
+
+import i18n from '@/utils/i18n';
 
 // Mock Firebase for testing
 vi.mock('@/firebase/config', () => ({

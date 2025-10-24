@@ -49,7 +49,8 @@ This section covers technical setup items that are far more time-consuming to re
   - **ESLint:** To find and fix problems in code.
   - **Prettier:** To automatically format all code with a consistent style.
   - **ESLint Plugins (foundation):** `@typescript-eslint`, `react-hooks`, `import`, `unicorn` (selected rules), `sonarjs` (selected rules), `security` (basic checks).
-    - Start new plugin rules as warnings, then ratchet to errors when stable.
+    - Rules are enforced at **error** level for CI on: `import/order`, `unicorn/prefer-node-protocol`, and `sonarjs/cognitive-complexity (15)` to guide LLMs and humans consistently.
+    - New plugin rules should start as warnings and be promoted to errors once stable.
     - **Import Order:** Enforced via `import/order`
       - Groups: builtin/external, internal (`@/**`), parent/sibling/index, type-only
       - Newlines between groups: always

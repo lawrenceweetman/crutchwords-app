@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest';
+
 import APP_CONFIG from './app.config';
 
 describe('APP_CONFIG', () => {

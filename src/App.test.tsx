@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import { describe, it, expect } from 'vitest';
 import { axe, toHaveNoViolations } from 'jest-axe';
+import { describe, it, expect } from 'vitest';
+
 import App from './App';
 import { I18nWrapper } from './tests/setup';
 

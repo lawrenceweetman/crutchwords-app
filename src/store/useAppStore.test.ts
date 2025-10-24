@@ -1,4 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest';
+
 import { useAppStore } from './useAppStore';
 
 describe('useAppStore', () => {
@@ -15,7 +16,7 @@ describe('useAppStore', () => {
 
     // Clear all sessions
     const sessions = [...store.sessions];
-    sessions.forEach(session => store.deleteSession(session.id));
+    sessions.forEach((session) => store.deleteSession(session.id));
   });
 
   describe('initial state', () => {

@@ -80,7 +80,11 @@ npm run lint:fix  # (use sparingly, may change code)
 - Import order is enforced. Group order:
   1. builtin/external 2) internal (`@/**`) 3) parent/sibling/index 4) type-only
 - Newlines between groups, alphabetical within groups.
-- Additional plugins enabled (warn-first): import, unicorn, sonarjs, security.
+- Additional plugins enabled: import, unicorn, sonarjs, security.
+- Error-level enforcement for CI (LLM-friendly):
+  - `import/order` (grouping, newlines, alpha)
+  - `unicorn/prefer-node-protocol`
+  - `sonarjs/cognitive-complexity` (threshold: 15)
 
 ### **Build Commands**
 

@@ -1,5 +1,6 @@
-import APP_CONFIG from '@/config/app.config';
 import { useTranslation } from 'react-i18next';
+
+import APP_CONFIG from '@/config/app.config';
 
 /**
  * Main application component for the Fluent app.
