@@ -13,7 +13,7 @@ Public speaking and effective communication are critical skills, but many people
 
 ## **3\. Core Principles**
 
-- **Privacy First:** Audio is processed in the browser. Only user-approved final transcripts are saved.
+- **Privacy First:** Audio is captured in the browser and securely transmitted to a backend service for transcription. Only user-approved final transcripts are saved. Raw audio is never stored.
 - **Coach, Not Critic:** Based on research, we understand fillers are a _natural part of cognition_, not a "flaw." The app's voice must be supportive and encouraging, focused on awareness and replacement (with pauses), not "elimination."
 - **Actionable Feedback:** Don't just report—provide clear, real-time feedback the user can act on.
 - **Low Friction:** The tool should be instantly usable. Open the app and start talking.
@@ -41,16 +41,25 @@ The roadmap is prioritized to tackle the most architecturally complex "retrofit 
 - CI/CD pipeline ready for automated deployments
 - Production build verified and optimized (194KB gzipped)
 - Comprehensive documentation and AI development workflows in place
-- Ready for P1 implementation: Real-Time Analysis & Core User Auth
+- ✅ **Critical Architecture Validation:** Web Speech API testing confirmed it filters out filled pauses ("um," "ah," "uh"), validating the need for backend STT architecture
+- ✅ **Backend STT Architecture Validated:** Firebase Cloud Function + Google Cloud Speech-to-Text architecture documented and confirmed as viable solution for preserving all disfluencies
+- Ready for P1 implementation: Real-Time Analysis with Backend Transcription & Core User Auth
 
 ### **P1: Real-Time Analysis & Core User Auth**
 
-- **Goal:** Build the core architectural components: real-time speech processing and user data persistence. This is the most complex refactor, so we do it first.
+- **Goal:** Build the core architectural components: real-time audio capture, backend transcription, filler word analysis, and user data persistence. This is the most complex refactor, so we do it first.
+- **Technical Foundation:**
+  - Frontend uses MediaRecorder API to capture raw audio
+  - Audio chunks sent to Firebase Cloud Function (`transcribeAudio`)
+  - Backend proxies to Google Cloud Speech-to-Text with disfluency preservation enabled
+  - Frontend receives raw transcripts and performs real-time filler word analysis
 - **User Stories:**
+  - As a Developer, I can deploy a `transcribeAudio` Firebase Cloud Function that receives audio, calls Google Cloud Speech-to-Text API with `enableAutomaticPunctuation: false`, and returns raw transcripts with all disfluencies preserved.
   - As a User, I can see a "Start Recording" button.
   - As a User, when I click "Start," the browser asks for microphone permission.
+  - As a User, as I speak, my audio is captured and transcribed in near-real-time (with ~2-5 second latency for backend processing).
   - As a User, as I speak, I can see my words transcribed onto the screen in real-time.
-  - As a User, as I speak, any filler words I say (e.g., "um," "like") are **immediately highlighted** (e.g., with a yellow background) in the live transcript.
+  - As a User, as I speak, any filler words I say (e.g., "um," "ah," "like") are **immediately highlighted** (e.g., with a yellow background) in the live transcript.
   - As a User, I can click "Stop Recording" to end my session.
   - As a User, when I first visit the app, I am automatically and anonymously signed into Firebase Authentication (this provides a stable userId for P2 features).
   - As a User, when I stop, I can see a simple summary report (e.g., "5 filler words in 60 seconds").
