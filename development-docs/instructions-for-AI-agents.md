@@ -171,3 +171,35 @@ The GitHub Actions workflow is configured for non-blocking execution:
 - No hanging Node processes
 - Clean commit history with passing CI/CD
 - Fast, efficient development cycles
+
+## **🚀 Starting New Features (P1, P2, etc.)**
+
+When implementing new features from the Product Requirements Document:
+
+1. **Read the PRD** to understand the feature requirements and user stories
+2. **Check the Tech Architecture Guide** for implementation patterns and data flow
+3. **Review existing code** to understand current patterns and avoid duplication
+4. **Write tests first** (TDD) - define the expected behavior before implementation
+5. **Implement incrementally** - small, testable changes with frequent commits
+6. **Verify thoroughly** - use `npm run verify` before committing
+7. **Update documentation** - keep README and guides current as features evolve
+
+**Feature Implementation Checklist:**
+
+- [ ] Read PRD requirements for the feature
+- [ ] Review technical architecture constraints
+- [ ] Write failing tests (TDD approach)
+- [ ] Implement minimum viable solution
+- [ ] Pass all tests and quality checks
+- [ ] Commit with descriptive message
+- [ ] Verify CI/CD passes
+
+## **🔄 Maintenance and Updates**
+
+For ongoing maintenance and dependency updates:
+
+1. **Check for vulnerabilities:** `npm audit`
+2. **Update dependencies carefully:** Use `npm outdated` to see available updates
+3. **Test thoroughly:** Full verification after any dependency changes
+4. **Update documentation:** Keep setup instructions current
+5. **Consider migration impact:** Major version updates may require code changes
