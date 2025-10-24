@@ -7,9 +7,7 @@
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
-    },
-    "jsx": true,
-    "jsxPragma": "React"
+    }
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
@@ -17,6 +15,7 @@
     "no-var": "error",
     "no-unused-vars": "off",
     "no-undef": "off",
-    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "@typescript-eslint/no-explicit-any": "warn"
   }
 }
